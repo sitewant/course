@@ -1,0 +1,161 @@
+<!-- 「網頁」是什麼? -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「網頁」是什麼? ｜ 沒事曬曬網 Sitewant</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+  </style>
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <script type="text/javascript">LineIt.loadButton();</script>
+
+
+  <style>
+    .js-social-share {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-left: 0;
+      line-height: 1;
+      list-style: none;
+    }
+    .js-social-share li {
+      padding-right: 1rem;
+      height: 22px;
+    }
+  </style>
+
+
+</head>
+<body>
+  <main class="handoutsContent">
+    <!-- 撥放器 -->
+    <section class="section-viewer">
+      <div class="viewer" id="viewer"></div>
+      
+      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js?version=0.1.0-beta.11"></script>
+      <script>
+        const config = { 
+          documentId: '59e79964-ebee-4928-ab54-1083a07c9997',
+          darkMode: true,
+          appBarColored: true,
+          initialMaxWidth: 800
+        };
+        CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+          
+        });
+      </script>
+    </section>
+
+      
+    <section class="section-hs">
+      <div class="hs-left">
+        <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3" data-url="https://sitwant.github.io/" data-color="default" data-size="large" data-count="false"></div>
+        <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+        <img class="hs-water" src="/assets/images/hc_water.png" alt="">
+      </div>
+
+      <div class="hs-middle">
+        <h1 class="hs-h1">使用者故事 User Story</h1>
+        <img class="hs-book" src="/assets/images/hc_book.png" alt="">
+        <span> :  Jani cho</span>
+        <ul class="tags">
+          <li class="tags-text">UI</li>
+          <li class="tags-text">UX</li>
+          <li class="tags-text">HTML</li>
+          <li class="tags-text">CSS</li>
+          <li class="tags-text">JavaScript</li>
+        </ul>
+      </div>
+      
+
+      <div class="hs-right">
+        <p class="hs-right-p1">隨著科技的進步，現代人獲取最新資訊皆透過網際網路，但你知道網路是怎麼運作、網頁又是怎麼被創造出來的嗎 ? 一個網頁的開發，涵蓋了資訊架構、程式開發、視覺美體呈現等等，是需要許多職位各司其職集結而成的。
+          想知道網頁設計還包含哪些相關的職位與工作嗎，趕快來一探究竟吧！
+        </p>
+        <img class="hs-orange" src="/assets/images/hc_orange.png" alt="">
+        <span class="hs-right-title">章節重點</span>
+        <p class="hs-right-p2">
+          1.網路是如何運作
+          2.網頁的構成 (CSS +HTML +Javascript)
+          3.網頁又分為靜態網頁、動態網頁
+          4.網頁的開發系統 ( 前端工程 + 後端工程 )
+          5.網站的類型 
+          (一頁式網站、企業形象網站、部落格網站、購物網站/電子商務 )
+          6.網頁設計相關職位與工作
+        </p>
+        </div>
+
+        <div class="hs-bottom">
+          <img class="hs-water-bottom" src="/assets/images/hc_water.png" alt="">
+          <ul class="tags-bottom">
+            <li class="tags-text">UI</li>
+            <li class="tags-text">UX</li>
+            <li class="tags-text">HTML</li>
+            <li class="tags-text">CSS</li>
+            <li class="tags-text">JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <a href="https://www.letswrite.tw/wordpress-share-buttons/"></a>
+
+
+  
+  
+  <script>
+    var el = document.querySelector('.entry-content');
+    var notIndex = location.pathname !== '/';
+    var notCategory = location.pathname.indexOf('category') === -1;
+    var notTag = location.pathname.indexOf('tag') === -1;
+    
+    // 載入JS檔
+    function appendJS(src) {
+      var script = document.createElement("script");
+      script.src = src;
+      document.head.appendChild(script);
+    }
+  
+    if(el && notIndex && notCategory && notTag) {
+      
+      var currentUri = document.querySelector('[rel="canonical"]').href;
+      
+      var fbBtn = '<div class="fb-like" data-href="' + currentUri + '" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>';
+      var lineBtn = '<div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3" data-url="' + currentUri + '" data-color="default" data-size="small" data-count="true" style="display: none;"></div>';
+      var twitterBtn = '<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>';
+      
+      var socialHTML = '<ul class="js-social-share">' +
+        '<li>' + fbBtn + '</li>' +
+        '<li>' + lineBtn + '</li>' +
+        '<li>' + twitterBtn + '</li>' +
+      '</ul>';
+      el.insertAdjacentHTML('beforebegin', socialHTML);
+  
+      if(document.querySelector('.sharedaddy')) {
+        var originShare = document.querySelector('.sharedaddy');
+        originShare.insertAdjacentHTML('beforebegin', socialHTML);
+      }
+      
+      appendJS('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
+      appendJS('https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0');
+      appendJS('https://platform.twitter.com/widgets.js');
+      
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,896 @@
+<!-- 講義列表 Handouts -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>索引結果 ｜ 沒事曬曬網 Sitewant</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="/css/handouts.css"> -->
+
+    <!-- 新增一個css放有修改的內容 -->
+    <link rel="stylesheet" href="/css/search.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+
+
+
+    <!-- swiper -->
+    <!-- https://codepen.io/tychoBlender/details/bEqGRZ -->
+
+</head>
+
+<body id="search">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="bread" id="bread">
+        <a href="/index.html">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/search.html">內容索引</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>UI/UX</span>
+        <i class="fas fa-chevron-right"></i>
+        <span>最新趨勢</span>
+        
+    </nav>
+
+
+
+    <!-- search -->
+    <main class="search ">
+        <section class="section-intro">
+            <h1 class="mom-search">UI/UX</h1>
+            <h4 class="child-search">最新趨勢</h4>
+        </section>
+
+        <!-- sort bar -->
+        <nav class="sort-bar container search-container">
+            <ul class="sort">
+                <li class="sort-item ">
+                    <h4 class="bottom-line bottom-default sort-itemShow">全部</h4>
+                </li>
+                <li class="sort-item ">
+                    <h4 class="bottom-line bottom-article">文章</h4>
+                </li>
+                <li class="sort-item">
+                    <h4 class="bottom-line bottom-handouts">講義</h4>
+                </li>
+
+            </ul>
+        </nav>
+
+        
+        <!-- mobile sort bar -->
+        <nav class="mobile-sort-bar container search-container">
+            <ul class="mobile-sort">
+                <li class="mobile-sort-item ">
+                    <h4 class="bottom-line bottom-default">全部</h4>
+                </li>
+                <li class="mobile-sort-item ">
+                    <h4 class="bottom-line bottom-article">文章</h4>
+                </li>
+                <li class="mobile-sort-item">
+                    <h4 class="bottom-line bottom-handouts">講義</h4>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- article area -->
+        <section class="sort-section  sort-article container search-container" id="sort-article">
+            <h2 class="sort-title">文章</h2>
+            <ul class="article-lists">
+                <li>
+                    <div class="article_Box">
+                        <div class="SmallArticle_Title">
+                            <h2>
+                                <a href="/blogContent_p1.html">2021年：您應該知道的12⼤UI UX趨勢
+                                </a>
+                            </h2>
+                            <hr class="SmallArticle_TitleLine">
+                        </div>
+                        <div class="article_Left">
+                            <h2 class="article_Title">
+                                <a href="/blogContent_p1.html">2021年：您應該知道的12⼤UI UX趨勢
+                                </a>
+                            </h2>
+                            <h3 class="article_Subtitle"><a href="https://uiuxtrend.com/ui-ux-trends-2021/
+                            " target="_blank" title="點擊前往原文">原文</a></h3>
+                            <h5 class="article_meta">
+                                <span class="article_Date">
+                                    2020/05/11
+                                </span>
+                                <span class="article_Author">
+                                    譯者：許凌嫣
+                                </span>
+                            </h5>
+                            <ul class="article_Tags">
+                                <li>
+                                    <a href="/search.html">UI/UX</a>
+                                </li>
+                                <li>
+                                    <a href="/search.html">最新趨勢</a>
+                                </li>
+                                <li>
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+
+                            </ul>
+                            <div class="article_Content">
+                                <p class="articleContent">
+                                    最受歡迎的UI UX趨勢2021不容錯過。
+                                    由於COVID-19，⾏為和習慣的變化將主導2021年的UI設計趨勢和UX設計趨勢。COVID-19⼤流⾏極⼤地改變了我們的⽣活⽅式和互聯網使⽤⽅式。
+                                    2021年最重要的UI UX趨勢中的⼀些將由COVID-19給我們的⽣活帶來的變化以及2021年從COVID-19的恢復所主導。
+
+                                    如果“⼤流⾏”是2020年的年度詞彙，我們希望2021年的年度詞彙將是“恢復”。
+
+                                    2021年頂級UI設計趨勢
+                                    1.在⽩⾊背景上搭配明亮和多彩的設計原件
+                                    2.具有⼈情味的創意和相關圖像
+                                    3.⾃然與可持續性
+                                    4.多個固定尺⼨的卡片
+                                    5.巨⼤的版式
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="articleImg">
+                            <a href="/blogContent_p1.html"> <img class="article_img" src="/assets/images/blog-article_1-1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="article_Box">
+                        <div class="SmallArticle_Title">
+                            <h2>
+                                <a href="/blogContent_p2.html">2021年介⾯設計師都在使⽤的10種產品原型設計⼯具(Prototyping Tools)
+                                </a>
+                            </h2>
+                            <hr class="SmallArticle_TitleLine">
+                        </div>
+                        <div class="article_Left">
+                            <h2 class="article_Title">
+                                <a href="/blogContent_p2.html">2021年介⾯設計師都在使⽤的10種產品原型設計⼯具(Prototyping Tools)
+                                </a>
+                            </h2>
+                            <h3 class="article_Subtitle"></h3>
+                            <h5 class="article_meta">
+                                <span class="article_Date">
+                                    2021/04/12
+                                </span>
+                                <span class="article_Author">
+                                    作者：葉又瑄
+                                </span>
+                            </h5>
+                            <ul class="article_Tags">
+                                <li><a href="/search.html">UI/UX</a></li>
+                                <li><a href="/search.html">最新趨勢</a></li>
+                                <li><a href="/search.html">設計工具</a></li>
+
+                            </ul>
+                            <div class="article_Content">
+                                <p class="articleContent">
+                                    我們可以從prototype來展示設計的交互性，透過prototype的互動測試也能將使用者的回饋做改善。本篇將介紹2021年十大最新工具，以幫助UX /
+                                    UI設計師們設計開發出理想的產品。
+
+                                    1. Adobe XD
+                                    Adobe XD是UI/UX設計師中最受歡迎的應用程序之一，不管是在繪製線框稿、互動原型設計、網站設計、製作遊戲介面等，都很適合使用Adobe
+                                    XD。團隊可以線上共同協作編輯，也可以直接從客戶那裡即時收到有價值的評論和反饋。
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="articleImg">
+                            <a href="/blogContent_p2.html"><img class="article_img" src="/assets/images/blog-article_2-1.png" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="article_Box">
+                        <div class="SmallArticle_Title">
+                            <h2>
+                                <a href="/blogContent_p3.html">七個技巧教你設計出迷人的攝影網站</a>
+                            </h2>
+                            <hr class="SmallArticle_TitleLine">
+                        </div>
+                        <div class="article_Left">
+                            <h2 class="article_Title">
+                                <a href="/blogContent_p3.html">七個技巧教你設計出迷人的攝影網站</a>
+                            </h2>
+                            <h3 class="article_Subtitle"><a href="https://99designs.com/blog/tips/photography-website-design/
+                            " target="_blank" title="點擊前往原文">原文</a></h3>
+                            <h5 class="article_meta">
+                                <span class="article_Date">
+                                    2020/04/09
+                                </span>
+                                <span class="article_Author">
+                                    譯者：李宥歆
+                                </span>
+                            </h5>
+                            <ul class="article_Tags">
+                                <li><a href="/search.html">UI/UX</a></li>
+                                <li><a href="/search.html">設計原理</a></li>
+                                <li><a href="/search.html">版面配置</a></li>
+                            </ul>
+                            <div class="article_Content">
+                                <p class="articleContent">
+                                    擅長攝影並不表示擅於做出一個良好的攝影網站。如果你完全想著光圈、景深和畫面空間的平衡，你應該不會擔心一些像「使用者經驗」、「網站造訪」或是「行動呼籲設計」的事。雖然忽視網站設計並不影響你的照片品質，卻一定會影響你的設計品質。
+
+                                    網站對於攝影者而言，是接洽更多新客戶和案子的常見管道。如果你的網站欠佳，你可能會失去一些生意，更何況是錯過建立個人品牌與名聲的機會。如果你想找到一個建立良好網站的速成班，在以下文章內容將送上會使你的客戶喜歡的，七個快速且實用的攝影網站設計訣竅。
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="articleImg">
+                            <a href="/blogContent_p3.html"> <img class="article_img" src="/assets/images/blog-article_3-1.png" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="article_Box">
+                        <div class="SmallArticle_Title">
+                            <h2>
+                                <a href="/blogContent_p4.html">UX設計者最重要的10本書
+                                </a>
+                            </h2>
+                            <hr class="SmallArticle_TitleLine">
+                        </div>
+                        <div class="article_Left">
+                            <h2 class="article_Title">
+                                <a href="/blogContent_p4.html">UX設計者最重要的10本書
+                                </a>
+                            </h2>
+                            <h3 class="article_Subtitle"><a
+                                    href="https://medium.com/yuj-designs-blogs/10-most-important-books-for-ux-designers-e93d0af7f05d"
+                                    target="_blank" title="點擊前往原文">原文</a></h3>
+                            <h5 class="article_meta">
+                                <span class="article_Date">
+                                    2020/04/08
+                                </span>
+                                <span class="article_Author">
+                                    譯者：劉貞宛
+                                </span>
+                            </h5>
+                            <ul class="article_Tags">
+                                <li>
+                                    <a href="/search.html">UI/UX</a>
+                                </li>
+                                <li>
+                                    <a href="/search.html">心得分享</a>
+                                </li>
+                                <li>
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+
+                            </ul>
+                            <div class="article_Content">
+                                <p class="articleContent">
+                                    這是設計師一生中必須閱讀的最重要的書籍。 這些書不僅會增進您對設計和設計概念的理解和知識。 同時也使您成為更好的設計師。
+
+                                    1.日常用品的設計
+                                    作者：唐·諾曼（Don Norman）
+                                    本書適合任何為人類體驗而設計的人。 它可以是人類使用的任何對象-從計算機程序到管理工具。 對於所有使用為他們設計的對象的人來說，這本書也是一本好書。
+                                    它有可能改變您對人如何體驗並與周圍環境互動的看法。
+                                    該書不僅使您意識到不良的設計，還可以幫助您了解其影響。 它增加了良好設計的可取性，並改變了您對事物設計的看法。 本書是公共領域的，您可以輕鬆地在線獲得免費的PDF副本。
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="articleImg">
+                            <a href="/blogContent_p4.html"><img class="article_img" src="/assets/images/blog-article_4-1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="article_Box">
+                        <div class="SmallArticle_Title">
+                            <h2>
+                                <a href="/blogContent_p5.html">5個UI/UX用於表單設計的最佳技巧
+                                </a>
+                            </h2>
+                            <hr class="SmallArticle_TitleLine">
+                        </div>
+                        <div class="article_Left">
+                            <h2 class="article_Title">
+                                <a href="/blogContent_p5.html">5個UI/UX用於表單設計的最佳技巧
+                                </a>
+                            </h2>
+                            <h3 class="article_Subtitle"></h3>
+                            <h5 class="article_meta">
+                                <span class="article_Date">
+                                    2020/04/08
+                                </span>
+                                <span class="article_Author">
+                                    作者：潘家酈
+                                </span>
+                            </h5>
+                            <ul class="article_Tags">
+                                <li>
+                                    <a href="/search.html">UI/UX</a>
+                                </li>
+                                <li>
+                                    <a href="/search.html">設計原理</a>
+                                </li>
+                                <li>
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                            <div class="article_Content">
+                                <p class="articleContent">
+                                    1.輸入後立即驗證並顯示狀態
+                                    YES: 使用者將資訊一輸入欄位，則立即驗證是否為正確，並顯示正確狀態於回覆欄後方。
+                                    NO: 使用者將全部資訊輸入完，按下送出鍵後，才於回覆欄框下呈現輸入錯誤的訊息。
+                                    與其在使用者點擊“提交”按鈕時才驗證資訊，不如在資訊一輸入完成後，立即驗證並顯示正確或錯誤狀態於回覆欄後方，讓使用者能夠更快速且輕鬆地修改輸入上的錯誤。
+                                    這種設計有助於提高表單提交率並減少使用者的資訊繁雜感。
+
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="articleImg">
+                            <a href="/blogContent_p5.html"><img class="article_img" src="/assets/images/blog-article_5-1.png" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="article_Box">
+                        <div class="SmallArticle_Title">
+                            <h2>
+                                <a href="/blogContent_p6.html">UX主管為後生晚輩提供的建議</a>
+                            </h2>
+                            <hr class="SmallArticle_TitleLine">
+                        </div>
+                        <div class="article_Left">
+                            <h2 class="article_Title">
+                                <a href="/blogContent_p6.html">UX主管為後生晚輩提供的建議</a>
+                            </h2>
+                            <h3 class="article_Subtitle"><a href="https://bootcamp.uxdesign.cc/unsolicited-advice-from-a-ux-manager-c8a162292dff
+                            " target="_blank" title="點擊前往原文">原文</a></h3>
+                            <h5 class="article_meta">
+                                <span class="article_Date">
+                                    2020/05/11
+                                </span>
+                                <span class="article_Author">
+                                    譯者：林秉鈞
+                                </span>
+                            </h5>
+                            <ul class="article_Tags">
+                                <li><a href="/search.html">UI/UX</a></li>
+                                <li><a href="/search.html">心得分享</a></li>
+                                <li><a href="/search.html">職場二三事</a></li>
+                            </ul>
+                            <div class="article_Content">
+                                <p class="articleContent">
+                                    我為什麼要寫這個？
+                                    我想幫助人們理解為什麼他們可能不會被錄取。
+
+                                    給誰的建議？
+                                    被UX經理、潛在客戶或高級設計師拒絕的人。
+
+                                    這將有什麼幫助？
+                                    我的目的是幫助求職者為面試做更好的準備，並提醒人們，被拒絕的理由不一定是因為缺乏經驗或技能。
+
+                                    讓我們做個心理準備
+                                    這不是操作手冊，也不是攻略指南。就是個建議。
+
+                                    讓我們開始吧，這是一個可能的情況……
+                                    您已經修過UX課程或從UX訓練營畢業，並且想開始以UX從業人員的身份工作。您的作品集看起來不賴，您的簡歷已準備好，您的個人資料已更新。您已經在自己身上投入了時間和金錢，是時候使這筆投資獲得回報了，因此您可以開始找工作了。
+                                    您提交申請並安排面試。噹，你被拒絕了。您又嘗試了更多的面試，同樣悲劇卻一次又一次的發生。您得到的理由表明您沒有足夠的經驗，或者直接含糊帶過，以至於不清楚您為什麼被拒絕。
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="articleImg">
+                            <a href="/blogContent_p6.html"> <img class="article_img" src="/assets/images/blog-article_6-1.jfif" alt=""></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <i class="fas fa-chevron-down arrow-down"></i>
+        </section>
+
+
+
+        <!-- handouts area -->
+        <section class="sort-section  sort-handouts  container " id="sort-handouts">
+            <h2 class="sort-title container search-container">講義</h2>
+            <div class="swpier-container">
+                <div>
+                    <div class="handouts-lists">
+                        <div class="classBox swiper-slide swiper-slideShow">
+                            <figure class="classBox-pic">
+                                <a href="/handoutsContent_p1.html"> <img src="/assets/cover/what_is_website.png" alt=""></a>
+                            </figure>
+                            <div class="classBox-content">
+                                <figure class="angle">
+                                    <!-- 標籤 -->
+
+                                    <nav class="content-label">
+                                        <ul class="label-list">
+                                            <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                            <li class="label-item"><a href="/search.html">設計原理</a></li>
+                                           
+                                        </ul>
+                                    </nav>
+
+                                    <!-- 標題 -->
+                                    <nav class="content-main">
+                                        <a href="/handoutsContent_p1.html" class="classBox-title ">
+                                            <h3 class="underline">「網頁」是什麼?</h3>
+                                        </a>
+                                        <a href="/handoutsContent_p1.html" class="classBox-title searchHandouts-subtitle">
+                                            <h3>你知道網路是怎麼運作、網頁又是怎麼被創造出來的嗎 ?</h3>
+                                        </a>
+                                    </nav>
+
+                                    <!-- 作者 -->
+                                    <nav class="content-sub">
+                                        <a href="/lecturers.html" class="classBox-writer">
+                                            <p>By JaniCho</p>
+                                        </a>
+                                    </nav>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="classBox swiper-slide swiper-slideShow">
+                            <figure class="classBox-pic">
+
+                                <a href="/handoutsContent_p2.html"> <img src="/assets/cover/about_webdesign.png" alt=""></a>
+                            </figure>
+
+                            <div class="classBox-content">
+                                <figure class="angle">
+                                    <nav class="content-label">
+                                        <ul class="label-list">
+                                            <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                            <li class="label-item"><a href="/search.html">設計原理</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <!-- 標題 -->
+                                    <nav class="content-main">
+                                        <a href="/handoutsContent_p2.html" class="classBox-title ">
+                                            <h3 class="underline">網頁設計探討</h3>
+                                        </a>
+                                        <a href="/handoutsContent_p2.html" class="classBox-title searchHandouts-subtitle">
+                                            <h3>網頁設計涵蓋哪些項目呢?</h3>
+                                        </a>
+                                    </nav>
+
+                                    <!-- 作者 -->
+                                    <nav class="content-sub">
+                                        <a href="/lecturers.html" class="classBox-writer">
+                                            <p>By JaniCho</p>
+                                        </a>
+                                    </nav>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="classBox swiper-slide swiper-slideShow">
+                            <figure class="classBox-pic">
+                                <a href="/handoutsContent_p3.html"> <img src="/assets/cover/sitemap.png" alt=""></a>
+                            </figure>
+
+                            <div class="classBox-content">
+                                <figure class="angle">
+                                    <!-- 標籤 -->
+                                    <nav class="content-label">
+                                        <ul class="label-list">
+                                            <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                            <li class="label-item"><a href="/search.html">設計原理</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <!-- 標題 -->
+                                    <nav class="content-main">
+                                        <a href="/handoutsContent_p3.html" class="classBox-title ">
+                                            <h3 class="underline">SITEMAP </h3>
+                                        </a>
+                                        <a href="/handoutsContent_p3.html" class="classBox-title searchHandouts-subtitle">
+                                            <h3>網頁開發的第一步，就從SITEMAP開始吧 !</h3>
+                                        </a>
+                                    </nav>
+
+                                    <!-- 作者 -->
+                                    <nav class="content-sub">
+                                        <a href="/lecturers.html" class="classBox-writer">
+                                            <p>By JaniCho</p>
+                                        </a>
+                                    </nav>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="classBox swiper-slide">
+                            <figure class="classBox-pic">
+
+                                <a href="/handoutsContent_p4.html"> <img src="/assets/cover/flow_and_job.png" alt=""></a>
+                            </figure>
+
+                            <div class="classBox-content">
+                                <figure class="angle">
+                                    <!-- 標籤 -->
+
+                                    <nav class="content-label">
+                                        <ul class="label-list">
+                                            <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                            <li class="label-item"><a href="/search.html">設計原理</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <!-- 標題 -->
+                                    <nav class="content-main">
+                                        <a href="/handoutsContent_p4.html" class="classBox-title ">
+                                            <h3 class="underline">網頁專案流程與工作分配</h3>
+                                        </a>
+                                        <a href="/handoutsContent_p4.html" class="classBox-title searchHandouts-subtitle">
+                                            <h3>架網站就如同蓋房子一樣，走錯一步就無法挽回。</h3>
+                                        </a>
+                                    </nav>
+
+                                    <!-- 作者 -->
+                                    <nav class="content-sub">
+                                        <a href="/lecturers.html" class="classBox-writer">
+                                            <p>By JaniCho</p>
+                                        </a>
+                                    </nav>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="classBox swiper-slide">
+
+                            <figure class="classBox-pic">
+
+                                <a href="/handoutsContent_p5.html"> <img src="/assets/cover/webdesign_flow.png" alt=""></a>
+                            </figure>
+
+                            <div class="classBox-content">
+                                <figure class="angle">
+                                    <!-- 標籤 -->
+
+                                    <nav class="content-label">
+                                        <ul class="label-list">
+                                            <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                            <li class="label-item"><a href="/search.html">設計原理</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <!-- 標題 -->
+                                    <nav class="content-main">
+                                        <a href="/handoutsContent_p5.html" class="classBox-title ">
+                                            <h3 class="underline">網頁「設計流程」初探</h3>
+                                        </a>
+                                        <a href="/handoutsContent_p5.html" class="classBox-title searchHandouts-subtitle">
+                                            <h3>每個使用者都有屬於它的故事由此展開發想、感受到最終達成目標。</h3>
+                                        </a>
+                                    </nav>
+
+                                    <!-- 作者 -->
+                                    <nav class="content-sub">
+                                        <a href="/lecturers.html" class="classBox-writer">
+                                            <p>By JaniCho</p>
+                                        </a>
+                                    </nav>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="classBox swiper-slide">
+
+                            <figure class="classBox-pic">
+
+                                <a href="/handoutsContent_p6.html"> <img src="/assets/cover/role.png" alt=""></a>
+                            </figure>
+                            <div class="classBox-content">
+                                <figure class="angle">
+                                    <!-- 標籤 -->
+
+                                    <nav class="content-label">
+                                        <ul class="label-list">
+                                            <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                            <li class="label-item"><a href="/search.html">心得分享</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <!-- 標題 -->
+                                    <nav class="content-main">
+                                        <a href="/handoutsContent_p6.html" class="classBox-title ">
+                                            <h3 class="underline">網頁工作角色 </h3>
+                                        </a>
+                                        <a href="/handoutsContent_p6.html" class="classBox-title searchHandouts-subtitle">
+                                            <h3>一個網頁的產出需要藉由團對協作才能完成。</h3>
+                                        </a>
+                                    </nav>
+
+                                    <!-- 作者 -->
+                                    <nav class="content-sub">
+                                        <a href="/lecturers.html" class="classBox-writer">
+                                            <p>By JaniCho</p>
+                                        </a>
+                                    </nav>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <i class="fas fa-chevron-right swiper-button-next"></i>
+                <i class="fas fa-chevron-left swiper-button-prev"></i>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by sitewant</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+</body>
+
+</html>

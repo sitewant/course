@@ -1,0 +1,575 @@
+<!-- 文章列表 Blog -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文章內頁 ｜ 沒事曬曬網 Sitewant</title>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blogContent.css">
+
+    <!-- 字型 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+
+    <style>
+        .js-social-share {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 0;
+            line-height: 1;
+            list-style: none;
+        }
+
+        .js-social-share li {
+            padding-right: 1rem;
+            height: 22px;
+        }
+    </style>
+
+</head>
+
+<body id="blogContent">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+   
+    <nav class="bread" id="bread">
+        <a href="/index.html">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/blog.html">文章列表</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>2021年介⾯設計師都在使⽤的10種產品原型設計⼯具</span>
+
+    </nav>
+
+    <!-- blog -->
+    <main class="blogContent">
+
+        <section class="container">
+            <div class="blogContent-container">
+                <div class="blogContent_Left">
+                    <ul class="blogContentAside_cats">
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                    <ul class="blogContentAside_news">
+                        <h2>最新文章</h2>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p1.html">2021年：您應該知道的12⼤UI UX趨勢</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p2.html">2021年介⾯設計師都在使⽤的10種產品原型設計⼯具</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p3.html">七個技巧教你設計出迷人的攝影網站</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p4.html">UX設計者最重要的10本書</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p5.html">5個UI/UX用於表單設計的最佳技巧</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p6.html">UX主管為後生晚輩提供的建議</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="blogContent_bg" src="/assets/images/blogContent_bg.png" alt="">
+            </div>
+
+            <div class="blogContent_Right">
+                <section class="bolgContent_Right-title">
+                    <h1 class="blogContent_Right-h1">2021年介⾯設計師都在使⽤的10種產品原型設計⼯具(Prototyping Tools)</h1>
+                    <br>
+                    <span class="blogContent-date">2020/04/12</span>
+                    <span class="blogContent-author">作者：葉又瑄</span>
+                    <div class="TagsandSocialIcon">
+                        <ul class="blogContent-tags">
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">UI/UX</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">最新趨勢</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">設計工具</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3"
+                                data-url="https://sitwant.github.io/" data-color="default" data-size="large"
+                                data-count="false">
+                                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                    async="async" defer="defer"></script>
+
+                            </div>
+                            <!-- facebook share -->
+                            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button"
+                                data-size="large">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                </section>
+                <section class="blogContent-article">
+                    <p>我們可以從prototype來展示設計的交互性，透過prototype的互動測試也能將使用者的回饋做改善。本篇將介紹2021年十大最新工具，以幫助UX / UI設計師們設計開發出理想的產品。
+                        <br>
+                        <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-1.png" alt="">
+                    </div>
+                    <a href="https://www.adobe.com/products/xd.html" target="_blank">
+                        <h3 class="blogContent_p2-title">1.Adobe XD </h3>
+                    </a>
+                    <br>
+                    <br>
+                    Adobe XD是UI/UX設計師中最受歡迎的應用程序之一，不管是在繪製線框稿、互動原型設計、網站設計、製作遊戲介面等，都很適合使用Adobe
+                    XD。團隊可以線上共同協作編輯，也可以直接從客戶那裡即時收到有價值的評論和反饋。
+
+                    </p>
+
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-2.png" alt="">
+                    </div>
+
+                    <a href="https://marvelapp.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">2. Marvel</h3>
+                    </a>
+                    <br>
+                    <br>
+                    <p>Marvel
+                        是一種簡單且使用者友好的工具，它可以在雲端線上編輯，旨在創建逼真的介面和設計規範。通過預先構建的範本和配備無限容量的照片空間和圖示的設計工具，構建互動式模型，將每個設計師的想法付諸實踐。設計人員可以為Desktop、Android和Apple產品創建原型，還可以使用Sketch插件和IOS工具。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-3.png" alt="">
+                    </div>
+                    <a href="https://www.axure.com/download" target="_blank">
+                        <h3 class="blogContent_p2-title">3. Axure RP</h3>
+                    </a>
+                    <br><br>
+                    <p>Axure RP是一款適合專業設計師使用的原型工具，因為它有非常厲害的動態功能。Axure
+                        RP支持功能強大的原型設計，它具有條件邏輯語句和自我調整視圖，允許設計人員在高級細節中構建互動式原型。不僅有全面的檔案編制、自動紅線批註的功能，還不需要任何程式碼便可以完整地與開發端移交。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-4.png" alt="">
+                    </div>
+                    <a href="https://www.invisionapp.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">4. InVision</h3>
+                    </a>
+                    <br><br>
+                    <p>
+                        InVision 是目前設計師和企業最常、最喜歡用的原型設計工具之一。它支持多種檔案類型的相容性，並具有點擊和拖動功能，使設計者能高效創建高保真度原型(high fidelity
+                        prototypes)。透過使用背景橡皮擦，就可以輕鬆上傳透明圖像，並幫它們添加一些動畫和轉場效果。它使用起來簡潔方便，像是團隊成員可以即時協作設計與快速收集反饋，同時設計師也能透過拖放工作流程來組織、設計清單。<br>
+                        InVision不斷提供新功能以提高效率，並持續找出更有助於設計師的製作原型的方法，這是InVision始終如此熱門的原因。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-5.png" alt="">
+                    </div>
+                    <a href="https://www.framer.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">5. Framer</h3>
+                    </a>
+                    <br><br>
+                    <p>如果你正在尋找一個設計工具，功能簡單，又能快速產出，那Framer非常適合你。Framer以它的靈活性、互動性、逼真的原型和回應式佈局而聞名。Framer
+                        提供即時預覽、編寫良好的文檔和和諧的工作流程，另外它還提供許多教學影片，讓使用者可以快速上手這個工具。。</p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-6.png" alt="">
+                    </div>
+                    <a href="https://www.figma.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">
+                            6. Figma</h3>
+                    </a>
+                    <br><br>
+                    <p>Figma是最近在設計師群非常熱門的新工具，它可以讓團隊成員從頭到尾即時協作跟共享編輯、甚至還可以留下評論，它能搭Figmotion和Autoflow等插件，以及Arc Tool和Vector
+                        Networks等插件做更多樣的使用。<br>
+                        Figma易於使用、分享迅速、性價比極高，可以線上編輯的功能已經成功地獲得一大批新的使用者。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-7.png" alt="">
+                    </div>
+                    <a href="https://www.justinmind.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">
+                            7. Justinmind</h3>
+                    </a>
+                    <br><br>
+                    <p>Justinmind
+                        是做線框和響應式網頁理想之選。設計師可以充分利用各種模板和UI庫來構建高保真原型也可以建立表單和數據列表。它不需要任何程式撰寫能力，輕鬆容易上手。貼心的Justinmind還有一找不同級別提供教學影片，讓設計師快速掌握此工具。最棒的是它支援離線工作，而且除了網頁版之外也支援手機板介面。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-8.png" alt="">
+                    </div>
+                    <a href="https://origami.design/" target="_blank">
+                        <h3 class="blogContent_p2-title">
+                            8. Origami Studio</h3>
+                    </a>
+                    <br><br>
+                    <p>Origami是Facebook設計團隊花了9個月時間開發的，一款適用於手機APP的原型製作的工具。設機師可以用它做出複雜的原型，甚至是強大的動畫，並具有“導出代碼”功能，可以將視覺設計轉換為書面代碼。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-9.png" alt="">
+                    </div>
+                    <a href="https://www.sketch.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">
+                            9. Sketch</h3>
+                    </a>
+                    <br><br>
+                    <p>說到這篇怎麼可以沒有說到Sketch，它是全世界的設計師最常使用的介面設計與原型設計工具。Sketch是一款以向量為基礎的設計工具，具有直觀的介面，可以編輯樣式、大小、設計佈局和内容、各種邊界、漸變填充、混合模式等。它支援設計流程的製作，設計師能在短短幾分鐘內創建高品質的原型。<br>
+                        Sketch目前只支援 Mac 作業系統，但它有數百個外掛程式跟好用的插件，為這個強大的工具增加了許多靈活性。
+                    </p>
+                    <br>
+                    <div class="blogContent-articleImg img-p2">
+                        <img src="/assets/images/blog-article_2-10.png" alt="">
+                    </div>
+                    <a href="https://webflow.com/" target="_blank">
+                        <h3 class="blogContent_p2-title">
+                            10. Webflow</h3>
+                    </a>
+                    <br><br>
+                    <p>即時設計即時預覽效果的效果在Webflow裡面完全可以實現，並且它並不用寫任何程式就可以達到寫程式的效果。僅需要用拖拉圖示來做出網站, 不過需要懂HTML/CSS
+                        的基礎觀念，包括了解網頁的架構，CSS的設計等等。Webflow支援的功能繁多，包含網站版型RWD、滑鼠游標移到圖上時會Roll的動畫選擇，都可以製作。<br>
+                        隨著解決方案的種類和範圍的增加，對設計師的期望也隨之提高。設計有時需要的東西比設計師能提供的要多，所以我們要不斷精進的能力並持續培養設計思維。這就是為什麼要找到好用且最佳的原型工具，並瞭解它們的特色與使用方式。希望這次整理出的2021最常使用的行設計工具能讓各位設計師找到合適的結果，以輔助各位創造更多優秀的設計作品。
+
+                    </p>
+
+                </section>
+                <section class="blogContent-articleTags">
+                    <hr>
+                    <span>更多關於：</span>
+                    <div class="TagsandSocialIcon">
+                        <ul class="blogContent-tags">
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">UI/UX</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">最新趨勢</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">設計工具</a>
+                            </li>
+                        </ul>
+                        <div class="bottom-socialIcon">
+                            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3"
+                                data-url="https://sitwant.github.io/" data-color="default" data-size="large"
+                                data-count="false">
+                                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                    async="async" defer="defer"></script>
+
+                            </div>
+                            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button"
+                                data-size="large">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by
+                    sitewant</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+</body>
+
+</html>

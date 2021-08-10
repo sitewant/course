@@ -1,0 +1,588 @@
+<!-- 文章列表 Blog -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文章內頁 ｜ 沒事曬曬網 Sitewant</title>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blogContent.css">
+
+    <!-- 字型 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+
+    <style>
+        .js-social-share {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 0;
+            line-height: 1;
+            list-style: none;
+        }
+
+        .js-social-share li {
+            padding-right: 1rem;
+            height: 22px;
+        }
+    </style>
+
+</head>
+
+<body id="blogContent">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <nav class="bread" id="bread">
+        <a href="/index.html">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/blog.html">文章列表</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>七個技巧教你設計出迷人的攝影網站</span>
+
+    </nav>
+
+    <!-- blog -->
+    <main class="blogContent">
+
+        <section class="container">
+            <div class="blogContent-container">
+                <div class="blogContent_Left">
+                    <ul class="blogContentAside_cats">
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                    <ul class="blogContentAside_news">
+                        <h2>最新文章</h2>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p1.html">2021年：您應該知道的12⼤UI UX趨勢</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p2.html">2021年介⾯設計師都在使⽤的10種產品原型設計⼯具</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p3.html">七個技巧教你設計出迷人的攝影網站</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p4.html">UX設計者最重要的10本書</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p5.html">5個UI/UX用於表單設計的最佳技巧</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p6.html">UX主管為後生晚輩提供的建議</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="blogContent_bg" src="/assets/images/blogContent_bg.png" alt="">
+            </div>
+
+            <div class="blogContent_Right">
+                <section class="bolgContent_Right-title">
+                    <h1 class="blogContent_Right-h1">七個技巧教你設計出迷人的攝影網站</h1>
+                    <h2 class="blogContent_Right-h2"><a href="https://99designs.com/blog/tips/photography-website-design/
+                        " target="_blank" title="點擊前往原文">原文</a></h2>
+
+                    <span class="blogContent-date">2020/04/09</span>
+                    <span class="blogContent-author">譯者：李宥歆</span>
+                    <div class="TagsandSocialIcon">
+                        <ul class="blogContent-tags">
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">UI/UX</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">設計原理</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">版面配置</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3"
+                                data-url="https://sitwant.github.io/" data-color="default" data-size="large"
+                                data-count="false">
+                                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                    async="async" defer="defer"></script>
+
+                            </div>
+                            <!-- facebook share -->
+                            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button"
+                                data-size="large">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                </section>
+                <section class="blogContent-article">
+                    <p>擅長攝影並不表示擅於做出一個良好的攝影網站。如果你完全想著光圈、景深和畫面空間的平衡，你應該不會擔心一些像「使用者經驗」、「網站造訪」或是「行動呼籲設計」的事。雖然忽視網站設計並不影響你的照片品質，卻一定會影響你的設計品質。<br><br>網站對於攝影者而言，是接洽更多新客戶和案子的常見管道。如果你的網站欠佳，你可能會失去一些生意，更何況是錯過建立個人品牌與名聲的機會。如果你想找到一個建立良好網站的速成班，在以下文章內容將送上會使你的客戶喜歡的，七個快速且實用的攝影網站設計訣竅。
+                    </p>
+                    <br>
+                    <h3>1.依主題區分你的展示</h3>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-1.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Jonathan Glynn Smith</span>
+                    <br>
+                    <br>
+                    <p>在攝影網站中有個常見的錯誤，就是將你全部的作品放在單一的藝廊展示。因為網站的主要內容是那疊照片，將它們全部放在同一個地方是違反直覺的。想像一下，萬一亞馬遜購物網將他們全部的販售項目都羅列於唯一一個叫做「商品」的類別下，會發生什麼事。<br>
+                        不如將你的照片依主題區分。如果你擅長不同類型的攝影主題或是偏好某幾種題材，這是個很好的開始。例如下面這位攝影師Ｔayler
+                        Smith將她的展示依業界中（如：商業）與主體類(如：狗)作區分。<br>
+                        這不僅能讓你的照片展示更輕易被觀眾吸收，也能引導觀眾如何瀏覽你的網站。某些來到你網站的訪客已經知道他們想要什麼了，所以讓他們沒有困惑的直接找到想要的資訊吧。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-2.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Tayler Smith</span>
+                    <br><br>
+                    <h3>2.只擷取精華</h3>
+                    <br>
+                    <p>攝影網站的作品展示有一點像實體商店陳設，只想把最好的擺放上去。不過展示過多作品會擾亂觀眾，擷取出你的最佳作品，擺脫你想放上全部照片的不安全感吧！<br>
+                        尤其如果你將這個攝影網站當作代表作品集，你更只能展示最精華的作品，精簡突出要比平凡冗長的內容留下更強烈的印象。<br>
+                        搜尋攝影網站，你會看到許多節選像是「個人精選」或「精選作品」（如下面攝影師Ａlan Schaller）。這是不錯的精選展示策略，同時也可以幫助你分類。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-3.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Alan Schaller</span>
+                    <br><br>
+                    <p>從實際面看，放上愈少的照片代表你可以放大各作品的縮圖，展示更多的視覺資訊。如果你足夠精挑細選，你甚至可以像攝影師Grace
+                        Chuang一樣放上整頁面的展示版面。不過整頁面的展示需要不斷滑動，會比點選的瀏覽效率還要差。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-4.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Grace Chuang</span>
+                    <br><br>
+                    <h3>3.確立網站目的</h3>
+                    <br>
+                    <p>網站設計不只關於它的樣式，也包含網站的功能。聰明的網站設計師會利用網站設定去影響造訪者的決定，促使造訪者採取明確行動，甚至增加業績。但在你做這些之前，你得確定你想達到的目的是什麼？<br>
+                        什麼是你攝影網站的主要目標？是吸引新的客群嗎？販售出版品？向預期客戶展示你的代表作品集？使藝廊策展者和藝術導演印象深刻？優先順序的目標設定，將會決定出一個最適合你的網站設計策略。<br>
+                        舉個例子，攝影師Adrieana
+                        Blazin的目的是想讓人們訂閱她的時事訊息，所以她在每一個頁面底下加入行動呼籲（CTA）的資訊表格設計。這類在細微處的重複性曝光多少能說服造訪者採取你期望的行動。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-5.png" alt="" style="width:auto">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Adrieana Blazin Photography
+                    </span>
+                    <br><br>
+                    <p>Danilo & Sharon 以商業導向為主，他們想著重在婚禮拍攝，這是為什麼他們只放上一種攝影主題。 另一方面，攝影網站Amelia
+                        Allen是關於印刷品販售，所以他們的「商店」會是首要的導覽列選項。</p>
+
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-6.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Danilo & Sharon
+                    </span>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-7.png" alt="" style="width:auto">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Amelia Allen
+                    </span>
+                    <br><br>
+                    <h3>4.在自介裡展現你的性格</h3>
+                    <br>
+                    <p>人們不會想要聘用一個完全不熟悉的人，尤其是婚宴等私人活動。聽起來有點違和，因為有多少人擁有一個是專業攝影師的朋友？對於這尷尬狀況的解決方法在「關於」頁面—在網站裡介紹你自己。
+                        在關於頁面說一點關於你的個人詳細介紹。再次提醒，精簡扼要就好，沒有人想讀完一篇陌生人的自傳。同時你必須在幾個段落展現你的性格特質。如果你有出色的事業，這會是個好機會列出你之前接洽過的業主或出版品。例如
+                        Lara Jade 和 Deanie Chen，或你甚至能像 Marvin Lei一樣，分享一些有趣的事情。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-8.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Lara Jade
+                    </span>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-9.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Deanie Chen
+                    </span>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-10.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Marvin Lei
+                    </span>
+                    <p>無論如何，確定網站包含地理位置和相關主題的搜尋關鍵字。我們將在下面討論更多關於ＳＥＯ。
+                    </p>
+                    <br><br>
+                    <h3>5.列上你的聯絡資訊</h3>
+                    <br>
+                    <p>大家可能早就知道，提供聯絡資訊對經營攝影事業者來說是不可或缺的。聯絡資訊能提供雙重的目的：首先它能讓網站的造訪者確切與你取得事業聯繫，同時能證明你還存在在業界裡。雇用一個網路上的陌生人多少令人害怕，所以造訪者如果看到電話號碼或是你具人氣的社群媒體，能夠消除一些擔心你是否還在這行，或是否有你本人存在的疑慮。<br>
+                        因為你網站的造訪者會有不同的偏好習慣，你會想列上足夠的聯絡方式讓每個人聯繫到你。確保提供你的電子信箱、電話號碼與社群媒體連結。提及你所在的城市也相當重要，因為造訪者能夠知道你在哪裡提供服務—通常人們會尋找當地的攝影師協助拍攝。<br>
+                        在哪裡放上你的聯絡資訊由你決定。很多的攝影師在關於頁面提供他們的聯絡資訊，保留「聯絡」頁籤使訊息能直接透過網站傳送。也可像攝影師Pedro
+                        Oliveira一樣，在頁首上保留他的電話和電子信箱，讓大家可以迅速的聯繫到他。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-11.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Pedro n the World
+                    </span>
+                    <br><br>
+                    <h3>6.關注SEO搜尋引擎優化</h3>
+                    <br>
+                    <p>SEO（搜尋引擎優化）是較少人熟悉的領域，除非他們常從事網站相關工作。對於攝影師來說，這是一個學習攝影網站設計的重要技能。<br>
+                        對於在地的攝影師來說，在SEO中最重要的關鍵字是地點。你會盡可能提及你的城鎮、縣市、國家，以及平時常逗留的地點。透過這方法，搜尋那些關鍵字的人會看到你的網站。同樣道理，你也會提及擅長的主題，如果你是個婚禮攝影師，要盡量列上婚禮的關鍵字。<br>
+                        在你的關於頁面，網誌是SEO關鍵字運作的不錯方法。不僅有助於吸引新的造訪者，也是你展現更多個人特質的機會—更不用說能增加造訪者停留在你網站的時間，將有助於你的SEO。
+                        如果你是婚禮攝影師，運用像是「婚禮」、「訂婚」甚至「日落」等關鍵字在網誌標題，幫助網站在人們搜尋那些關鍵字時出現。如果你想走簡潔一點的風格，你可以在照片下加上簡短的文字敘述，以簡短一行字提及工作的地點與項目。<br>
+                        因為你有很多的照片，別忘了預留ALT替代文字，這是個可以運用關鍵字的地方。
+                    </p>
+                    <br><br>
+                    <h3>7.忘了浮水印吧</h3>
+                    <br>
+                    <p>沒有人喜歡浮水印—對觀看者和攝影師都是。它會使觀看者分心。如果你想展現攝影技巧，浮水印只會破壞你的才華。簡而言之，浮水印的缺點大過優點。<br>
+                        「不會有人偷我的照片嗎？」你知道⋯⋯他們也許會。但如果有人刻意想盜用你的照片，你真的認為一個浮水印能夠阻止他們嗎？你必須在照片中央抹上一層浮水印去確保他們不能盜用，但是這方法會比問題本身還糟糕。<br>
+                        如果你擔心這問題，這裡有其他方法可以保護你的作品。例如 Adam Bird
+                        Photography網站在當你試圖想從網站上拷貝他的照片時，會宣告出版權資訊。或是將版權宣示以細微的文字放在網站的明顯位置。參考一下Nukem網站的左下角。
+                    </p>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-12.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：Adam Bird Photography </span>
+                    <div class="blogContent-articleImg img-p3">
+                        <img src="/assets/images/blog-article_3-13.png" alt="">
+                    </div>
+                    <span class="blogContent-imgSource">圖片來源：圖片來源：Nukem
+                    </span>
+                    <br>
+                    <br>
+                    <p>你理想的攝影網站是什麼樣子呢？<br>
+
+                        每個人都會拍照，但不是每個人都可以拍出好的照片，這是為什麼他們需要雇用你。你對於做出一個好的網站有多少自信呢？攝影網站也可以不需要有太高的要求，但如果你想要確保網站有利於你的攝影事業，也可以找一個專業的網站設計師幫你建立一個網站。
+                    </p>
+                </section>
+
+                <section class="blogContent-articleTags">
+                    <hr>
+                    <span>更多關於：</span>
+                    <div class="TagsandSocialIcon">
+                        <ul class="blogContent-tags">
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">UI/UX</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">設計原理</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">版面配置</a>
+                            </li>
+                        </ul>
+                        <div class="bottom-socialIcon">
+                            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3"
+                                data-url="https://sitwant.github.io/" data-color="default" data-size="large"
+                                data-count="false">
+                                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                    async="async" defer="defer"></script>
+
+                            </div>
+                            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button"
+                                data-size="large">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by
+                    sitewant</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+</body>
+
+</html>

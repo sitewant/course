@@ -1,0 +1,551 @@
+<!-- 講義列表 Handouts -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>講義列表 ｜ 沒事曬曬網 Sitewant</title>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- 新增一個css放有修改的內容 -->
+    <!-- <link rel="stylesheet" href="/css/handouts.css"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/handouts.js"></script>
+
+
+</head>
+
+<body id="handouts">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="bread" id="bread">
+        <a href="/index.html">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/handouts.html">講義列表</a>
+    </nav>
+
+    <!-- handouts -->
+    <main class="handouts">
+        <section class="section-intro">
+            <h1 class="intro-title">講義列表</h1>
+        </section>
+        <section class="section-lists">
+            <div class="classBox">
+                <figure class="classBox-pic">
+                    <a href="/handoutsContent_p1.html"> <img src="/assets/cover/what_is_website.png" alt=""></a>
+                </figure>
+                <div class="classBox-content">
+                    <figure class="angle">
+                        <!-- 標籤 -->
+                        <nav class="content-label">
+                            <ul class="label-list">
+                                <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                <li class="label-item"><a href="/search.html">設計原理</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <!-- 標題 -->
+                        <nav class="content-main">
+                            <a href="/handoutsContent_p1.html" class="classBox-title ">
+                                <h3 class="underline">「網頁」是什麼?</h3>
+                            </a>
+                            <a href="/handoutsContent_p1.html" class="classBox-title handouts-subtitle">
+                                <h3>你知道網路是怎麼運作、網頁又是怎麼被創造出來的嗎 ?</h3>
+                            </a>
+                        </nav>
+
+                        <!-- 作者 -->
+                        <nav class="content-sub">
+                            <a href="/lecturers.html" class="classBox-writer">
+                                <p>By JaniCho</p>
+                            </a>
+                        </nav>
+                    </figure>
+
+
+                </div>
+            </div>
+            <div class="classBox">
+                <figure class="classBox-pic">
+                    <a href="/handoutsContent_p2.html"> <img src="/assets/cover/about_webdesign.png" alt=""></a>
+                </figure>
+
+                <div class="classBox-content">
+                    <figure class="angle">
+                        <!-- 標籤 -->
+
+                        <nav class="content-label">
+                            <ul class="label-list">
+                                <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                <li class="label-item"><a href="/search.html">設計原理</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <!-- 標題 -->
+                        <nav class="content-main">
+                            <a href="/handoutsContent_p2.html" class="classBox-title ">
+                                <h3 class="underline">網頁設計探討</h3>
+                            </a>
+                            <a href="/handoutsContent_p2.html" class="classBox-title handouts-subtitle">
+                                <h3>網頁設計涵蓋哪些項目呢?</h3>
+                            </a>
+                        </nav>
+
+                        <!-- 作者 -->
+                        <nav class="content-sub">
+                            <a href="/lecturers.html" class="classBox-writer">
+                                <p>By JaniCho</p>
+                            </a>
+                        </nav>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="classBox">
+                <figure class="classBox-pic">
+                    <a href="/handoutsContent_p3.html"> <img src="/assets/cover/sitemap.png" alt=""></a>
+                </figure>
+
+                <div class="classBox-content">
+                    <figure class="angle">
+                        <!-- 標籤 -->
+
+                        <nav class="content-label">
+                            <ul class="label-list">
+                                <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                <li class="label-item"><a href="/search.html">設計原理</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <!-- 標題 -->
+                        <nav class="content-main">
+                            <a href="/handoutsContent_p3.html" class="classBox-title ">
+                                <h3 class="underline">SITEMAP </h3>
+                            </a>
+                            <a href="/handoutsContent_p3.html" class="classBox-title handouts-subtitle">
+                                <h3>網頁開發的第一步，就從SITEMAP開始吧 !</h3>
+                            </a>
+                        </nav>
+
+                        <!-- 作者 -->
+                        <nav class="content-sub">
+                            <a href="/lecturers.html" class="classBox-writer">
+                                <p>By JaniCho</p>
+                            </a>
+                        </nav>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="classBox">
+                <figure class="classBox-pic">
+
+                    <a href="/handoutsContent_p4.html"> <img src="/assets/cover/flow_and_job.png" alt=""></a>
+                </figure>
+
+                <div class="classBox-content">
+                    <figure class="angle">
+                        <!-- 標籤 -->
+
+                        <nav class="content-label">
+                            <ul class="label-list">
+                                <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                <li class="label-item"><a href="/search.html">設計原理</a></li>
+
+                            </ul>
+                        </nav>
+
+                        <!-- 標題 -->
+                        <nav class="content-main">
+                            <a href="/handoutsContent_p4.html" class="classBox-title ">
+                                <h3 class="underline">網頁專案流程與工作分配</h3>
+                            </a>
+                            <a href="/handoutsContent_p4.html" class="classBox-title handouts-subtitle">
+                                <h3>架網站就如同蓋房子一樣，走錯一步就無法挽回。</h3>
+                            </a>
+                        </nav>
+
+                        <!-- 作者 -->
+                        <nav class="content-sub">
+                            <a href="/lecturers.html" class="classBox-writer">
+                                <p>By JaniCho</p>
+                            </a>
+                        </nav>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="classBox">
+                <figure class="classBox-pic">
+
+                    <a href="/handoutsContent_p5.html"> <img src="/assets/cover/webdesign_flow.png" alt=""></a>
+                </figure>
+
+                <div class="classBox-content">
+                    <figure class="angle">
+                        <!-- 標籤 -->
+
+                        <nav class="content-label">
+                            <ul class="label-list">
+                                <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                <li class="label-item"><a href="/search.html">設計原理</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- 標題 -->
+                        <nav class="content-main">
+                            <a href="/handoutsContent_p5.html" class="classBox-title ">
+                                <h3 class="underline">網頁「設計流程」初探</h3>
+                            </a>
+                            <a href="/handoutsContent_p5.html" class="classBox-title handouts-subtitle">
+                                <h3>每個使用者都有屬於它的故事由此展開發想、感受到最終達成目標。</h3>
+                            </a>
+                        </nav>
+
+                        <!-- 作者 -->
+                        <nav class="content-sub">
+                            <a href="/lecturers.html" class="classBox-writer">
+                                <p>By JaniCho</p>
+                            </a>
+                        </nav>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="classBox">
+
+                <figure class="classBox-pic">
+
+                    <a href="/handoutsContent_p6.html"> <img src="/assets/cover/role.png" alt=""></a>
+                </figure>
+                <div class="classBox-content">
+                    <figure class="angle">
+                        <!-- 標籤 -->
+
+                        <nav class="content-label">
+                            <ul class="label-list">
+                                <li class="label-item"><a href="/search.html">UI/UX</a></li>
+                                <li class="label-item"><a href="/search.html">心得分享</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- 標題 -->
+                        <nav class="content-main">
+                            <a href="/handoutsContent_p6.html" class="classBox-title ">
+                                <h3 class="underline">網頁工作角色 </h3>
+                            </a>
+                            <a href="/handoutsContent_p6.html" class="classBox-title handouts-subtitle">
+                                <h3>一個網頁的產出需要藉由團對協作才能完成。</h3>
+                            </a>
+                        </nav>
+
+                        <!-- 作者 -->
+                        <nav class="content-sub">
+                            <a href="/lecturers.html" class="classBox-writer">
+                                <p>By JaniCho</p>
+                            </a>
+                        </nav>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="pagination">
+            <ul class="pagination-list">
+                <li class="pagination-item">
+                    <a href="/"><i class="fas fa-caret-left"></i></a>
+                </li>
+                <li class="pagination-item">
+                    <a href="/" class="pagination-line">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="/" class="pagination-line">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="/" class="pagination-line">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="/" class="pagination-line">4</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="/" class="pagination-line">5</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="/"><i class="fas fa-caret-right"></i></a>
+                </li>
+            </ul>
+
+        </section> -->
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 - present. Design by sitewant
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+</body>
+
+</html>

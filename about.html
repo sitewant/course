@@ -1,0 +1,461 @@
+<!-- 關於我們 About -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>關於我們 ｜ 沒事曬曬網 Sitewant</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+
+</head>
+
+<body id="about" onload="init()">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="bread" id="bread">
+        <a href="/">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="">關於我們</a>
+    </nav>
+
+    <!-- about -->
+    <main class="about">
+        <section class="section-about">
+            <!-- <img class="bg-1 togr" src="/assets/images/index_bg_littlePic 01.png" alt="#">
+            <img class="bg-2 togr" src="/assets/images/hashtag.png" alt="#">
+            <img class="bg-3 togr" src="/assets/images/index_bg_littlePic 03.png" alt="#"> -->
+
+            <h1 class="section-about-title">關於 曬曬網</h1>
+            <p class="section-about-p">沒事曬曬網是2021年全新落成的網頁設計資源分享平台，<br>
+                由一群網頁設計狂熱者聯手打造。<br>
+                文章主題最新潮，讓你在網頁設計學習的路上輕鬆與國際趨勢接軌；<br>
+                講義內容最實用，讓你一網打盡網頁設計基本盤。<br>
+                還有網站企劃單元，跟網站設計師一同見證沒事曬曬網如何平地起高樓。<br>
+                讓你不捕漁，成天曬網曬成為網頁高手。
+            </p>
+            <p class="section-about-p-s">
+                沒事曬曬網是2021年全新落成的網頁設計資源分享平台，由一群網頁設計狂熱者聯手打造。
+                文章主題最新潮，讓你在網頁設計學習的路上輕鬆與國際趨勢接軌；
+                講義內容最實用，讓你一網打盡網頁設計基本盤。
+                還有網站企劃單元，跟網站設計師一同見證沒事曬曬網如何平地起高樓。
+                讓你不捕漁，成天曬網曬成為網頁高手。
+            </p>
+
+            <h1 class="section-about-title s">沒事曬曬網迷人之處</h1>
+            <ul>
+                <li class="section-about-text">
+                    <i class="far fa-check-circle"></i>
+                    鮮魚乾貨：來自世界各地最新的網頁相關文章，我們只有最新鮮的。
+                </li>
+                <li class="section-about-text">
+                    <i class="far fa-check-circle"></i>
+                    無料曬網：實體課程的教學講義提供線上閱讀跟免費下載，學習無阻礙。
+                </li>
+                <li class="section-about-text">
+                    <i class="far fa-check-circle"></i>
+                    一網打盡：不知道要搜尋什麼嗎?我們全都分類好了，就算是新手也能在茫茫大海中找到相關的主題。
+                </li>
+                <li class="section-about-text">
+                    <i class="far fa-check-circle"></i>
+                    漁夫養成：完整呈現此網站從零到一的企劃與製作流程，好奇的你也能一探究竟。
+                </li>
+                <li class="section-about-text-s">
+                    <i class="far fa-check-circle"></i>
+                    鮮魚乾貨：最新的網頁相關文章。
+                </li>
+                <li class="section-about-text-s">
+                    <i class="far fa-check-circle"></i>
+                    無料曬網：課程講義線免費下載。
+                </li>
+                <li class="section-about-text-s">
+                    <i class="far fa-check-circle"></i>
+                    一網打盡：快速找到相關的主題。
+                </li>
+                <li class="section-about-text-s">
+                    <i class="far fa-check-circle"></i>
+                    漁夫養成：完整呈現網站製作流程。
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="section-move">
+            <form action="https://mailthis.to/andy510112@gmail.com" method="POST">
+                <h1 class="section-move-title">聯絡我們</h1>
+                <h2 class="section-move-h2">有好資源要與我們分享嗎？還是迫不及待想成為課程學生了？
+                    或是使用上有任何問題，甚至是讚美跟鼓勵，都歡迎留言給我們！🐟
+                </h2>
+                <div class="section-move-input">
+                    <input class="section-move-input-s" id="nameText" type="text" name="Name"  value size="60">
+                    <div class="name">姓名&emsp;Name</div>
+                </div>
+
+                <div class="section-move-input">
+                    <input class="section-move-input-l" id="emailText" type="email" name="Email"  value size="60">
+                    <div class="name email">信箱&emsp;E-mail</div>
+                </div>
+
+                <div class="section-move-input">
+                    <textarea class="section-move-input-b" id="bodyText" name="your-message" cols="200" rows="200" aria-required="true" aria-invalid="false"></textarea>
+                    <div class="talk">想說的話&emsp;...</div>
+                </div>
+
+                <h5 class="section-move-p">
+                    隱私權政策免責聲明:填寫的資訊僅作為內部資料收集跟回覆聯繫使用，我們不會轉傳給任何第三方，尤其是舊情人；也不會拿去賣給補習班或是銀行貸款，以及任何商業用途。
+                </h5>
+
+                <input class="section-move-btn" type="submit" value="送出" id="mailTo" onclick="submitHandler();">
+
+            </form>
+
+            <img src="/assets/images/contact_modal_lucky.png" alt="move">
+        </section>
+
+        <section class="section-steps">
+            <!-- <img class="bg-4 togr" src="/assets/images/index_bg_littlePic 02.png" alt=""> -->
+            <div class="steps_bg" id="down">
+            </div>
+            <span class="steps_bg-text-e">Ｗant a<br> site?</span>
+            <span class="steps_bg-text-c">讓業界名師手把手<br>帶你織網!</span>
+            <button class="steps_bg-btn" onclick="location.href='/lecturers.html'">前往</button>
+            <a class="steps_bg-down" href="#down">
+                <i class="fas fa-arrow-down bye"></i>
+            </a>
+        </section>
+
+        <section class="section-card">
+            <!-- <img class="bg-5 togr" src="/assets/images/index_bg_littlePic 01.png" alt="">
+            <img class="bg-6 togr" src="/assets/images/hashtag.png" alt=""> -->
+
+            <h1 class="section-about-title">不知道從何開始?<br>先了解自己的定位吧!</h1>
+
+            <div class="steps-card">
+
+                <a href="/search.html" target="_blank"
+                    class="card">
+                    <div class="card-front">
+                        <h2 class="card-front-h">我是新手</h2>
+                        <span class="card-front-p">UI設計師</span>
+                        <button class="card-front-btn">></button>
+                    </div>
+
+                    <div class="card-back">
+                        <span class="card-back-h">透過索引標籤,<br>找尋自己有興趣的課程或文章</span>
+                        <i class="far fa-hand-pointer"></i>
+                    </div>
+                </a>
+
+                <a href="/blog.html" target="_blank"
+                    class="card">
+                    <div class="card-front card-front-orange">
+                        <h2 class="card-front-h">我是知識</h2>
+                        <span class="card-front-p">蒐藏家</span>
+                        <button class="card-front-btn">></button>
+                    </div>
+
+                    <div class="card-back card-front-orange">
+                        <span class="card-back-h">可以看看我們的<br>最新趨勢&知識彙整相關文章</span>
+                        <i class="far fa-hand-pointer"></i>
+                    </div>
+                </a>
+
+                <a href="/handouts.html" target="_blank"
+                    class="card">
+                    <div class="card-front">
+                        <h2 class="card-front-h">我是課程</h2>
+                        <span class="card-front-p">學生</span>
+                        <button class="card-front-btn">></button>
+                    </div>
+
+                    <div class="card-back">
+                        <span class="card-back-h">想要溫故知新，<br>複習上課內容嗎?<br>講義還可以下載喔!</span>
+                        <i class="far fa-hand-pointer"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section-bottom">
+            <!-- <img class="bg-7 togr" src="/assets/images/index_bg_littlePic 03.png" alt=""> -->
+
+            <div class="bottom-bg">
+                <img src="/assets/images/about_bottom_lucky.png" alt="About">
+            </div>
+            <div class="bottom-text">
+                <h1 class="bottom-title">不用釣魚，<span class="push">直接撒網</span></h1>
+                <span class="bottom-p">一次網羅所有最新網頁設計資訊。</span>
+                <button class="bottom-bg-btn" onclick="location.href='/blog.html'">前往</button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by
+                    sitewant</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+</body>
+
+</html>

@@ -1,0 +1,1034 @@
+<!-- 網站企劃 Planning -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>網站企劃 ｜ 沒事曬曬網 Sitewant</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/planning.js"></script>
+
+</head>
+
+<body id="planning">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="bread" id="bread">
+        <a href="/index.html">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/planning.html">網站企劃</a>
+    </nav>
+
+    <!-- planning -->
+    <main class="planning">
+        <section class="section-intro">
+            <h1 class="intro-title">網站企劃</h1>
+            <p class="intro-p">Ｈi！想了解「沒事曬曬網」的幕後工作嗎？<br>
+                現在就帶你一覽曬曬網的發想過程與組織架構吧！</p>
+        </section>
+
+        <section class="section-button">
+
+            <div class="button">
+                <div class="section-button-line"></div>
+
+                <button class="button-item button1 nohover bgc-yellow" id="button1">
+                    <img class="buttonPic" src="/assets/planning/button_website.png" alt="">
+                    <p class="button-text">網站緣起</p>
+                    <svg id="button-svg1" class="button-svg" viewbox="-50 -50 100 102">
+
+                        <circle cx="100" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points="100,50 0,50 0,-10"></polyline>
+                    </svg>
+
+                </button>
+
+                <button class="button-item button2 bgc-orange" id="button2">
+                    <img class="buttonPic" src="/assets/planning/button_characters.png" alt="">
+                    <p class="button-text">人物誌</p>
+                    <svg id="button-svg2" class="button-svg" viewbox="-50 -50 100 102">
+
+                        <circle cx="85" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points="85,50 0,50 0,-10"></polyline>
+                    </svg>
+
+                </button>
+
+
+
+
+
+                <button class="button-item button3 bgc-blue" id="button3">
+                    <img class="buttonPic" src="/assets/planning/button_ux.png" alt="">
+                    <p class="button-text">UX設計流程</p>
+                    <svg id="button-svg3" class="button-svg" viewbox="-50 -50 100 102">
+
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points=" 0,50 0,-10"></polyline>
+                    </svg>
+                </button>
+
+
+                <button class="button-item button4 bgc-red" id="button4">
+                    <img class="buttonPic" src="/assets/planning/button_ui.png" alt="">
+                    <p class="button-text">UI設計元件</p>
+                    <svg id="button-svg4" class="button-svg" viewbox="-50 -50 100 102">
+                        <circle cx="-85" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="50" r="0.25"></circle>
+                        <circle cx="0" cy="-10" r="0.25"></circle>
+                        <polyline points="-85,50 0,50 0,-10"></polyline>
+                    </svg>
+                </button>
+
+
+                <button class="button-item button5 bgc-purple" id="button5">
+                    <img class="buttonPic" src="/assets/planning/button_team.png" alt="">
+                    <p class="button-text">團隊介紹</p>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="section container section-content1 active">
+
+            <div class="content">
+                <h2 class="yellow-text">核心目標</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="goal">
+                            <li class="goal pictureShow">
+                                <img src="/assets/planning/goal/goal1-1.png" alt="">
+                            </li>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text">
+                        <h4>
+                            沒事曬曬網(Sitewant)是2021年全新落成的網頁設計資源與資訊的分享平台，包含教學講義及知識文章，由一群網頁設計狂熱者聯手打造。
+                            網站內容包含最新趨勢國內外專業文章、網頁設計相關教學講義，讓使用者可以持續學習跟蒐集新知；還有網站企劃單元，能一窺網站從零到一的整個架構過程。除了希望能舒適愉快的使用本網站，也希望平台上的資源能被更多人看到，並一同精進成長甚至分享更豐富的資源。讓我們一起整天曬網曬成網頁高手。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <h2 class="yellow-text">SWOT分析</h2>
+                <div class="box bottom-box">
+                    <div class="picturelist">
+                        <ul class="picture" id="SWOT">
+                            <li class="SWOT pictureShow">
+                                <img src="/assets/planning/SWOT/SWOT1-2.png" alt="">
+                            </li>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text box-text-swot">
+                        <h4>曬曬網擁有專業的網站設計業師指導，教授建置團隊實用的設計理論與技巧。團隊成員雖未有完整的網站建置經驗，卻能利用成員們來自不同行業的職場能力與經驗，作為網站企劃的養分，以多元角度設計與思考，使網站功能更貼切不同職業背景的使用者。<br>
+                            <br>
+                            <h4>儘管網站的籌備時間只有短短一個月，某些進階網站功能開發項目尚未確定，但正因為是全新的網站專案，使團隊有機會發揮創造力，設計出符合現今網頁設計學習趨勢的學習網站。未來我們將與更多網頁設計師合作、開發線上學習工具，讓曬曬網成為擁有豐富設計資訊的共享平台。
+                            </h4>
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bottom-button">
+
+                <button class="button-item button2 bgc-orange" id="button2">
+                    <img class="buttonPic" src="/assets/planning/button_characters.png" alt="">
+                    <p class="button-text">人物誌</p>
+
+                </button>
+            </div>
+        </section>
+
+        <section class="section container section-content2">
+
+            <div class="content ">
+                <h2 class="yellow-text bgc-orange">使用者分析</h2>
+                <div class="box tonglixin">
+                    <div class="picturelist shoudong">
+                        <ul class="picture" id="userAnalysis">
+                            <li class="userAnalysis pictureShow">
+                                <img src="/assets/planning/userAnalysis/userAnalysis1-1.png" alt="">
+                            </li>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text">
+                        <h4 class="user-text userA">使用者A</h4>
+                        <h4 class="user-text userA">無相關經驗的網頁設計新鮮人</h4>
+                        <h4>中文系大學應屆畢業生，有感於文科找工作不容易，希望在就業前學習一些專業技能。對於網頁設計有興趣，打算從基礎開始了解。
+                            目前時間自由，可以全職自修。希望可以透過網路自學，同時累積作品集，達到成為網頁UXUI設計師的目標。</h4>
+                        <br>
+                        <h4 class="user-text userB">使用者B</h4>
+                        <h4 class="user-text userB">想要更上一層樓的業界自學者</h4>
+                        <h4>目前網頁設計產業公司擔任正職PM，長期與工程師和UX/UI設計師合作，對於寫程式以及使用者介面設計都有基本的了解，希望可以轉職成為UX設計師。
+                            只有下班後的時間可以自由運用，需要在有限的時間內擷取最精華的內容。產業資訊更迭速度快，希望學習資源平台能夠定期汰舊換新，整理好最新的趨勢給使用者。</h4>
+                        <br>
+                        <h4 class="user-text userC">使用者C</h4>
+                        <h4 class="user-text userC">決心推廣個人學習品牌的業界老師</h4>
+                        <h4>業界教網頁設計的正職或兼職教師，希望可以透過在這個網站分享文章以曝光行銷自己的網頁設計課程，和更多學生取得接觸的機會。</h4>
+                        <br>
+                        <h4 class="user-text userD">使用者D</h4>
+                        <h4 class="user-text userD">台北職能發展學院的老師</h4>
+                        <h4>需要透過課程網站發布資訊，分享學習資源，甚至與學生互動，扮演網站管理者的角色。</h4>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <h2 class="yellow-text bgc-orange">同理心地圖</h2>
+                <div class="box bottom-box tonglixin ">
+                    <div class="picturelist shoudong2">
+                        <ul class="picture" id="tonglixinMap">
+                            <li class="tonglixinMap pictureShow">
+                                <img src="/assets/planning/tonglixinMap/tonglixinMap1-1.png" alt="">
+                            </li>
+                            <li class="tonglixinMap"><img src="/assets/planning/tonglixinMap/tonglixinMap2-1.png"
+                                    alt=""></li>
+                            <li class="tonglixinMap"><img src="/assets/planning/tonglixinMap/tonglixinMap3-1.png"
+                                    alt=""></li>
+                            <li class="tonglixinMap"><img src="/assets/planning/tonglixinMap/tonglixinMap4-1.png"
+                                    alt=""></li>
+                            <i class="arrow-left  displayNone  fas fa-chevron-left"></i>
+                            <i class="arrow-right  fas fa-chevron-right"></i>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text ">
+                        <h4 class="user-text userA">使用者A</h4>
+                        <h4 class="user-text userA">無相關經驗的網頁設計新鮮人</h4>
+                        <h4>痛點：</h4>
+                        <h4>網路上資訊五花八門，東一點西一點，很難有系統性的循序漸進學習。</h4>
+                        <h4>需求：</h4>
+                        <h4>現在網路上獲取資訊太多反而容易引起焦慮，希望每一個主題都能有懶人包，整理過的資源容易吸收， 學習也能更有效率！</h4>
+                        <br>
+                        <h4 class="user-text userB">使用者B</h4>
+                        <h4 class="user-text userB">想要更上一層樓的業界自學者</h4>
+                        <h4>痛點：</h4>
+                        <h4>能夠自由安排的時間很少，不定期加班導致安排固定的夜間課程會有困難。</h4>
+                        <h4>需求：</h4>
+                        <h4>網頁設計產業推陳出新非常快速，時常會覺得跟不上國際趨勢。希望能有一個平台隨時提供最新資訊。</h4>
+                        <br>
+                        <h4 class="user-text userC">使用者C</h4>
+                        <h4 class="user-text userC">決心推廣個人學習品牌的業界老師</h4>
+                        <h4>痛點：</h4>
+                        <h4>由於在大部分的時間都在教課，所以沒有心力從零開始經營分享課程專業的個人網站，同時又希望自己可以接觸到更多學生。</h4>
+                        <h4>需求：</h4>
+                        <h4>有一個平台能夠曝光自己的文章或課程，在免費分享資源的同時也觸及潛在客戶，同時提升個人知名度。</h4>
+                        <br>
+                        <h4 class="user-text userD">使用者D</h4>
+                        <h4 class="user-text userD">台北職能發展學院的老師</h4>
+                        <h4>痛點：</h4>
+                        <h4>實體課程講義整合之後苦無發佈的管道。</h4>
+                        <h4>需求：</h4>
+                        <h4>希望可以透過一個功能完善的平台提供實體課程的資訊以及教學講義，幫助正在學習網頁設計的新舊學生。</h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-button">
+
+                <button class="button-item button3 bgc-blue" id="button3">
+                    <img class="buttonPic" src="/assets/planning/button_ux.png" alt="">
+                    <p class="button-text">UX設計流程</p>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="section container section-content3">
+
+            <div class="content">
+                <h2 class="yellow-text bgc-blue">功能地圖</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="functionalMap">
+                            <li class="functionalMap pictureShow">
+                                <img src="/assets/planning/functionalMap/FunctionalMap1-1.png" alt="">
+                            </li>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text">
+                        <h4>Functional Map分成三個層次來思考，分別為首頁、Header、Footer。</h4><br>
+                        <h4>首先，在首頁方面，有[關於我們]、[文章列表]、[講義列表]等頁面，以及由上而下延伸出來的次頁面、資訊內容與功能。</h4><br>
+                        <h4>其次，在Header方面，除了延續首頁重要頁面的超連結之外，另外增加了主題索引的功能，以利使用者可以快速找到資訊。</h4><br>
+                        <h4>最後，在Footer方面，則是規劃了[師資介紹]、[網站企劃]、[問與答]等頁面的超連結，有助於使用者更進一步了解本網站的相關資訊。</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="yellow-text bgc-blue">Flowchart</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="flowchart">
+                            <li class="flowchart pictureShow">
+                                <img src="/assets/planning/flowchart/flowchart1-1.png" alt="">
+                            </li>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text">
+                        <h4>Flowchart是什麼？<br>
+
+                            在網站地圖規劃完成之後，就要進行操作流程的檢視。基本上就是流程圖的一種，在繪製的過程中站在使用者的角度來體驗整個操作網站的過程，藉以審視目前的網站規劃與設計是否仍有不完善的地方。仔細思考使用者的操作上的每一個可能性，會不會在網站迷路？會不會走進死胡同？藉著Flowchart來檢視流程邏輯是非常重要的。
+                        </h4>
+                        <h4>我們怎麼做？<br>
+
+                            由於第一版的網站功能並不太複雜，多是頁面呈現，使用者需要做的決策也不多，所以在網站規劃上是相對容易的。在繪製Flowchart的過程中，我可以再次確認使用者在頁面之間的轉換都具備清楚的指引，並且合乎常理，使用者可能需要進行的決策所有可能都被考量進去，才不會造成使用者因為操作上的困惑而提早結束造訪。同時，Flowchart中起終點這個元件，也幫助我們重新思考使用者會透過什麼樣的方式造訪我們的網站，而我們網站的目標又是什麼，才不至於在一個大型專案中迷失。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="yellow-text bgc-blue">UI Flow</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="UIflow">
+                            <li class="UIflow pictureShow">
+                                <img src="/assets/planning/UIflow/UIflow1-1.png" alt="">
+                            </li>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text">
+                        <h4 class="box-textUi">UI Flow
+                            (介面流程)指的是頁面之間的操作動線。較偏邏輯邏輯層面，是sitemap的進階延伸，目的在於更清楚地梳理想法跟步驟，知道使用者怎麼操作一項功能後，才能去規劃動線。常見形式有文字動線與介面動線，本專案使用文字動線去執行。文字動線的UI
+                            Flow是以文字說明頁面與資訊之間的層級關係，以數字與字母顯示層級，例如:1-1-1a、2.1a。<br>
+
+                            我們在Funtional
+                            Map的步驟時確認總共會有的頁面跟主要內容，這階段大家細部討論內容有甚麼以及資訊該如何呈現。大家邊討論邊列出每個頁面會呈現的功能跟區塊，思考是否符合清楚易讀性、資訊完整性、以及頁面與頁面之間的關聯。<br>
+
+                            確認有沒有前一階段沒有想到、遺漏的功能，並同時讓Wireframe的畫面慢慢成型。平均分配頁面後，各整理出頁面的UI Flow，再由UX負責人統整跟檢查。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <h2 class="yellow-text bgc-blue">Wireframe</h2>
+                <div class="box bottom-box">
+                    <div class="picturelist">
+                        <ul class="picture" id="wireframe">
+                            <li class="wireframe pictureShow">
+                                <img src="/assets/planning/wireframe/wireframe1-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe2-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe3-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe4-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe5-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe6-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe7-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe8-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe9-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe10-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe11-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe12-1.png" alt="">
+                            </li>
+                            <li class="wireframe">
+                                <img src="/assets/planning/wireframe/wireframe13-1.png" alt="">
+                            </li>
+                            <i class="arrow-left  displayNone  fas fa-chevron-left"></i>
+                            <i class="arrow-right  fas fa-chevron-right"></i>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+
+                    </div>
+                    <div class="box-text">
+                        <h4>此專案在UI
+                            Flow階段已將所需頁面數量、文字呈現、功能做全面性確認。到Wireframe階段UX團隊能快速了解各頁面資訊架構去發想確認版面內容功能的呈現如何與使用者產生互動關係。團隊將繪製的每一頁Wireframe就資訊內容與功能在頁面上呈現的方式與位置做深入探討易讀性與修正，最終再盤點檢示版面是否有遺漏資訊、功能與整體流程是否流暢。
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-button">
+                <button class="button-item button4 bgc-red" id="button4">
+                    <img class="buttonPic" src="/assets/planning/button_ui.png" alt="">
+                    <p class="button-text">UI設計元件</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="section container section-content4">
+
+            <div class="content">
+                <h2 class="yellow-text bgc-red">Logo與站名</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="logoSitename">
+                            <li class="logoSitename pictureShow">
+                                <img src="/assets/planning/logoSitename/logoSitename1-1.png" alt="">
+                            </li>
+                            <i class="icon-search White fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+                    <div class="box-text">
+                        <h4 class="box-textSitename">沒事曬曬網</h4>
+                        <h4>曬在網上，即是日常。</h4>
+                        <h4>「曬曬網」取自「三天打魚，兩天曬網」。
+                            不過這裡的「網」字代表網際網路，帶有人們平日偷閒上網的慵懶趣味性；「曬」字能令人聯想到沐浴在溫暖柔和的陽光下，
+                            如同曬曬網團隊想讓學習網站設計這件事，也能顯得活潑逗趣、平易近人。
+                        </h4>
+                        <h4>放心，這裡沒有釣魚程式，盡情曬網吧！</h4>
+                        <h4>而Logo以不同大小的鮮豔方塊組成，
+                            象徵人們開啟電腦，悠遊在大大小小的視窗間，
+                            沈浸於豐富的資訊世界帶來的驚喜。
+                            簡潔的色塊排列，符合科技的現代感與輕快的生活節奏。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="yellow-text bgc-red">曬網小夥伴</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="littlebuddy">
+                            <li class="littlebuddy pictureShow">
+                                <img src="/assets/planning/littlebuddy/littlebuddy1-1.png" alt="">
+                            </li>
+                            <li class="littlebuddy">
+                                <img src="/assets/planning/littlebuddy/littlebuddy2-1.png" alt="">
+                            </li>
+                            <li class="littlebuddy">
+                                <img src="/assets/planning/littlebuddy/littlebuddy3-1.png" alt="">
+                            </li>
+                            <li class="littlebuddy">
+                                <img src="/assets/planning/littlebuddy/littlebuddy4-1.png" alt="">
+                            </li>
+                            <li class="littlebuddy">
+                                <img src="/assets/planning/littlebuddy/littlebuddy5-1.png" alt="">
+                            </li>
+                            <li class="littlebuddy">
+                                <img src="/assets/planning/littlebuddy/littlebuddy6-1.png" alt="">
+                            </li>
+                            <li class="littlebuddy">
+                                <img src="/assets/planning/littlebuddy/littlebuddy7-1.png" alt="">
+                            </li>
+                            <i class="arrow-left displayNone fas fa-chevron-left"></i>
+                            <i class="arrow-right  fas fa-chevron-right"></i>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+
+                    <div class="box-text">
+                        <h4>慵懶的好好先生 -【水豚君】</h4>
+                        <h4>曬網想給予使用者歡樂逗趣、輕鬆學習的感覺，在此氛圍之下，帶有慵懶、賣萌、溫和又活潑個性的水豚君-Lucky就此誕生 !!
+                            搭配著網站背景簡易色塊元素的設計，最初以玩心趣味的七巧板作為發想的出發點，同時希望能夠結合程式設計的科技感，團隊決定以Low Poly的方式呈現水豚君。
+                        </h4>
+                        <h4>七巧板在拼湊的過程中會不停地重新排列組合，用以創意發想出圖形的更多可能性，隱喻著使用者在學習網頁設計的路上，能夠有許多不同的發想，進而創造出更好的UX體驗和UI設計，而Low
+                            Poly低多邊形網格就像七巧板的色塊拼接，深淺不一的配色，勾勒出現代科技的3D動畫感，讓水豚君同時帶有童心趣味和資訊的科技感。</h4>
+                        <h4>那就讓充滿活潑元氣和擁有資訊科技知識的Lucky陪伴你輕鬆學習網頁設計吧！</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2 class="yellow-text bgc-red">設計規範</h2>
+                <div class="box">
+                    <div class="picturelist">
+                        <ul class="picture" id="designGuide">
+                            <li class="designGuide pictureShow">
+                                <img src="/assets/planning/designGuide/designGuide1-1.png" alt="">
+                            </li>
+                            <li class="designGuide">
+                                <img src="/assets/planning/designGuide/designGuide2-1.png" alt="">
+                            </li>
+                            <li class="designGuide">
+                                <img src="/assets/planning/designGuide/designGuide3-1.png" alt="">
+                            </li>
+                            <i class="arrow-left displayNone fas fa-chevron-left"></i>
+                            <i class="arrow-right fas fa-chevron-right"></i>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+
+                        <img class="設計規範" src=" " alt="">
+                    </div>
+                    <div class="box-text">
+                        <h4 class="box-textSitename">色彩：</h4>
+                        <h4>採用繽紛、活潑、多樣化的氛圍作為主色調，並用黑灰白色階，凸顯設計層次。
+                        </h4>
+                        <h4 class="box-textSitename">按鈕：</h4>
+                        <h4>分為功能型、文字連結型、卡片型，在懸浮、點擊、聚焦狀態時皆有變化，以利使用者更直覺的操作介面。
+                        </h4>
+
+                        <h4 class="box-textSitename">字體：</h4>
+                        <h4>中文字體Noto Sans CJK／英文字體lexend根據大小，分為標題時使用的H1～H6及內文使用的段落文字標籤。
+                        </h4>
+                        <h4 class="box-textSitename">
+                            元素：</h4>
+                        <h4>根據設計風格、標準色及網站內容，製作出各式向量小圖，增加設計豐富度。
+
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <h2 class="yellow-text bgc-red">MockFlow</h2>
+                <div class="box bottom-box">
+                    <div class="picturelist">
+                        <ul class="picture" id="mockflow">
+                            <li class="mockflow pictureShow">
+                                <img src="/assets/planning/mockflow/mockflow1-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow2-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow3-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow4-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow5-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow6-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow7-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow8-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow9-1.png" alt="">
+                            </li>
+                            <li class="mockflow">
+                                <img src="/assets/planning/mockflow/mockflow10-1.png" alt="">
+                            </li>
+                            <i class="arrow-left displayNone fas fa-chevron-left"></i>
+                            <i class="arrow-right  fas fa-chevron-right"></i>
+                            <i class="icon-search fas fa-search-plus"></i>
+                        </ul>
+                    </div>
+
+                    <div class="box-text">
+
+                        <h4>將LOGO、icon、設計規範與曬曬網小夥伴配置安排於網頁並進行微調，顧及使用者便利性與整體設計，視覺互動包括按鈕，選單等元素呈現構思，將流程合乎邏輯串連起來，幫助使用者可以更便利使用產品。
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-button">
+
+                <button class="button-item button5 bgc-purple" id="button5">
+                    <img class="buttonPic" src="/assets/planning/button_team.png" alt="">
+                    <p class="button-text">團隊介紹</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="section container section-content5">
+
+            <div class="content">
+                <h2 class="yellow-text">團隊成員</h2>
+                <div class="box box5">
+                    <div class="member-left first">
+                        <div class="member-profile" id="tammy">
+                            <div class="member-picture tammy">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">李宥歆</h2>
+                                <h3 class="name-en">UI設計 / 企劃 / 攝影</h3>
+                                <h4 class="member-job">UI設計組成員，負責網站企劃頁面的視覺設計、美感配色。繪製網站Logo。<br>
+                                    參與網站命名企劃、網站企劃書編排統整。團隊人像攝影編輯。 </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="member-right first">
+                        <div class="member-profile" id="wen">
+                            <div class="member-picture wen">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">吳文琦</h2>
+                                <h3 class="name-en">UI設計</h3>
+                                <h4>網站UI設計組成員，負責文章列表、文章內頁、常見問題頁面的視覺設計、美感配色。
+                                    組織繪製網站設計規範、UI kits、設計元素。</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="box box5">
+                    <div class="member-left">
+                        <div class="member-profile" id="iris">
+                            <div class="member-picture iris">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">何佳潔</h2>
+                                <h3 class="name-en">UX設計</h3>
+                                <h4 class="member-job">網站UX設計組成員，負責講義列表、講義內頁的頁面設計及其UI Flow與Wireframe繪製。
+                                    課程講義內容整理。 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-right">
+                        <div class="member-profile" id="jackson">
+                            <div class="member-picture jackson">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">林秉鈞</h2>
+                                <h3 class="name-en">UX設計</h3>
+                                <h4>網站UX設計組成員，負責文章列表與文章內頁的頁面設計及其UI Flow與Wireframe繪製。
+                                    常見問題頁面文字撰寫。
+                                    協助前端切版。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="box box5">
+                    <div class="member-left">
+                        <div class="member-profile" id="ashley">
+                            <div class="member-picture ashley">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">Ashley</h2>
+                                <h3 class="name-en">前端工程 / 企劃</h3>
+                                <h4 class="member-job">負責首頁、網站企劃、頁首頁尾以及其他頁面切版。
+                                    常見問題頁面文字撰寫。參與網站命名企劃。 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-right">
+                        <div class="member-profile" id="keira">
+                            <div class="member-picture keira">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">許凌嫣</h2>
+                                <h3 class="name-en">UI設計</h3>
+                                <h4>UI設計組組長，掌握UI設計進度與工作分配及跨部門溝通。
+                                    負責首頁、關於我們、內容索引頁面的視覺規劃設計、美感配色。繪製網站吉祥物。 </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="box box5">
+                    <div class="member-left">
+                        <div class="member-profile" id="ellie">
+                            <div class="member-picture ellie">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">葉又瑄 </h2>
+                                <h3 class="name-en">UX設計 / 企劃</h3>
+                                <h4 class="member-job">網站UX設計組組長，分配工作進度、整合以及對外溝通。負責關於我們、主題索引、師資介紹的頁面設計及其UI
+                                    Flow與Wireframe繪製。 網站企劃部分頁面撰寫。協助前端切版。 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-right">
+                        <div class="member-profile" id="fina">
+                            <div class="member-picture fina">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">楊羽絜</h2>
+                                <h3 class="name-en">PM / UX設計 / 企劃</h3>
+                                <h4>產品經理，掌握全體進度，跨部門溝通，會議主持。繪製Flowchart。首頁、網站企劃、常見問題的頁面UX設計及其UI
+                                    Flow與Wireframe繪製。網站企劃人物誌撰寫。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="box box5">
+                    <div class="member-left">
+                        <div class="member-profile" id="andy">
+                            <div class="member-picture andy">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">Andy</h2>
+                                <h3 class="name-en">前端工程</h3>
+                                <h4 class="member-job">負責關於我們、問與答、師資介紹及其他頁面切版、功能和特效撰寫。 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-right">
+                        <div class="member-profile">
+                            <div class="member-picture pm">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">劉貞宛</h2>
+                                <h3 class="name-en">PM </h3>
+                                <h4>產品經理，規劃網站開發時程，組織網站命名企劃，繪製Functional Map。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="box box5">
+                    <div class="member-left">
+                        <div class="member-profile" id="lily">
+                            <div class="member-picture lily">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">潘家酈</h2>
+                                <h3 class="name-en">UI設計 </h3>
+                                <h4 class="member-job">UI設計組成員，負責講義列表、講義內容、師資介紹頁面的視覺設計、美感配色。
+                                    繪製網站吉祥物以及設計滑鼠游標 。
+                                    課程講義內容整理。 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-right ">
+                        <div class="member-profile">
+                            <div class="member-picture jani">
+                            </div>
+                            <div class="member-content">
+                                <h2 class="name-ch">Jani</h2>
+                                <h3 class="name-en">專案指導老師</h3>
+                                <h4>引導企劃發想，協助開發流程問題解決，確認工作進度，指導網頁切版。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- bigPicture -->
+
+        <div class="bigP displayNone">
+            <i class="bigPremove fas fa-times"></i>
+            <div class="bigPicture">
+                <img src=" " alt="">
+            </div>
+            <i class="bigP-arrow-right fas fa-chevron-right"></i>
+            <i class="bigP-arrow-left fas fa-chevron-left"></i>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by
+                    sitewant</span></p>
+        </div>
+    </footer>
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+    <!-- 新增 -->
+    <div class="mobileModal"></div>
+
+</body>
+
+</html>

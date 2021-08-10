@@ -1,0 +1,502 @@
+<!-- 文章列表 Blog -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>文章內頁 ｜ 沒事曬曬網 Sitewant</title>
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blogContent.css">
+
+    <!-- 字型 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+    </style>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="/js/main.js"></script>
+
+    <style>
+        .js-social-share {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-left: 0;
+            line-height: 1;
+            list-style: none;
+        }
+
+        .js-social-share li {
+            padding-right: 1rem;
+            height: 22px;
+        }
+    </style>
+
+</head>
+
+<body id="blogContent">
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <img class="mobile-logo-img" src="/assets/images/logo.png" alt="">
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <!-- <h2>Hey,</h2>
+                            <h2>有話想偷偷跟我們說嗎？</h2>
+                            <h2>歡迎隨時聯繫我們</h2> -->
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <nav class="bread" id="bread">
+        <a href="/index.html">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/blog.html">文章列表</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>5個UI/UX用於表單設計的最佳技巧</span>
+
+    </nav>
+
+    <!-- blog -->
+    <main class="blogContent">
+
+        <section class="container">
+            <div class="blogContent-container">
+                <div class="blogContent_Left">
+                    <ul class="blogContentAside_cats">
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                        <li class="blogContentAside-cats-item">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                    <ul class="blogContentAside_news">
+                        <h2>最新文章</h2>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p1.html">2021年：您應該知道的12⼤UI UX趨勢</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p2.html">2021年介⾯設計師都在使⽤的10種產品原型設計⼯具</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p3.html">七個技巧教你設計出迷人的攝影網站</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p4.html">UX設計者最重要的10本書</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p5.html">5個UI/UX用於表單設計的最佳技巧</a>
+                        </li>
+                        <li class="blogContentAside-news-item">
+                            <a href="/blogContent_p6.html">UX主管為後生晚輩提供的建議</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="blogContent_bg" src="/assets/images/blogContent_bg.png" alt="">
+            </div>
+
+            <div class="blogContent_Right">
+                <section class="bolgContent_Right-title">
+                    <h1 class="blogContent_Right-h1">5個UI/UX用於表單設計的最佳技巧</h1>
+                    <span class="blogContent-date">2020/04/08</span>
+                    <span class="blogContent-author">作者：潘家酈</span>
+                    <div class="TagsandSocialIcon">
+                        <ul class="blogContent-tags">
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">UI/UX</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">設計原理</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">版面配置</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3"
+                                data-url="https://sitwant.github.io/" data-color="default" data-size="large"
+                                data-count="false">
+                                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                    async="async" defer="defer"></script>
+
+                            </div>
+                            <!-- facebook share -->
+                            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button"
+                                data-size="large">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+                </section>
+
+                <section class="blogContent-article">
+                    <h3>1.輸入後立即驗證並顯示狀態</h3>
+                    <p>✅ YES: 使用者將資訊一輸入欄位，則立即驗證是否為正確，並顯示正確狀態於回覆欄後方。<br>
+                        ❌ NO: 使用者將全部資訊輸入完，按下送出鍵後，才於回覆欄框下呈現輸入錯誤的訊息。<br>
+                        與其在使用者點擊“提交”按鈕時才驗證資訊，不如在資訊一輸入完成後，立即驗證並顯示正確或錯誤狀態於回覆欄後方，讓使用者能夠更快速且輕鬆地修改輸入上的錯誤。<br>
+                        這種設計有助於提高表單提交率並減少使用者的資訊繁雜感。
+                    </p>
+
+                    <div class="blogContent-articleImg ">
+                        <img src="/assets/images/blog-article_5-1.png" alt="" style="width:auto">
+                    </div>
+                    <br>
+
+                    <h3>2.使用一列式表單設計</h3>
+                    <p>✅ YES: 表單項目由上到下呈現一列式 <br>
+                        ❌ NO: 表單項目左右並排，非一列式 <br>
+                        眼睛的流動從頂部到底部處於單向流動，一列式表單設計可以減少使用者的眼球運動及資訊混亂。 <br>
+                        若為多列式表單設計，使用者可能會迷失在混亂的表單方框中，使未填到的機率大增。
+                    </p>
+                    <div class="blogContent-articleImg">
+                        <img src="/assets/images/blog-article_5-2.png" alt="" style="width:auto">
+                    </div>
+                    <br>
+                    <h3>3.避免將所有錯誤資訊合併提醒</h3>
+                    <p>✅ YES : 提醒輸入錯誤的警訊，直接呈現於該回覆欄之後 <br>
+                        ❌ NO : 合併所有提醒輸入錯誤的警訊，集中於表單頂部或底部 <br>
+                        將錯誤警訊直接顯示於該回覆欄下方，可以節省使用者的認知負荷，並立即將資訊做修正。<br>
+                        若將表單中所有輸入錯誤的資訊一併集結在一起，並提醒於表單的上方或底端，使用者還需將錯誤資訊與其對應的回覆欄進行匹配再做資訊修正，較浪費時間且易造成使用者資訊混淆。
+                    </p>
+                    <div class="blogContent-articleImg">
+                        <img src="/assets/images/blog-article_5-3.png" alt="" style="width:auto">
+                    </div>
+                    <br>
+                    <h3>4.多資訊表單分組</h3>
+                    <p>✅ YES : 將資訊依相同性質分門別類 <br>
+                        ❌ NO : 資訊未分類 <br>
+                        若表單中有很多資訊要填寫，可先將資訊做分類，使資訊較清晰明瞭的呈現，讓使用者易於閱覽且完整的填入適當的資訊。 <br>
+                        未將資訊分類的表單，資訊過多的情況下，容易造成使用者的閱覽疲乏及填寫上的漏網之餘。
+                    </p>
+                    <div class="blogContent-articleImg">
+                        <img src="/assets/images/blog-article_5-4.png" alt="" style="width:auto">
+                    </div>
+                    <br>
+                    <h3>5.主旨標籤與回覆欄相對位置的設計</h3>
+                    <p>✅ YES : 主旨標籤設置於回覆欄上方 <br>
+                        ❌ NO : 主旨標籤與回覆欄並排 <br>
+                        研究顯示，使用者瀏覽網頁資訊時，眼球移動的方向會由上至下移動。 <br>
+                        若將主旨標籤與回覆欄的位置做並排設計，則使用者的眼球必須先向左偏斜，再返回到右側回覆欄，接著再向下移動閱覽其他資訊。相反，若將主旨標籤設置於回覆欄上方則可以減少眼球的左右移動，節省閱覽資訊時的精力，進而創造更好的使用者體驗。
+                    </p>
+                    <div class="blogContent-articleImg">
+                        <img src="/assets/images/blog-article_5-5.png" alt="" style="width:auto">
+                    </div>
+                </section>
+
+                <section class="blogContent-articleTags">
+                    <hr>
+                    <span>更多關於：</span>
+                    <div class="TagsandSocialIcon">
+                        <ul class="blogContent-tags">
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">UI/UX</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">設計原理</a>
+                            </li>
+                            <li class="blogContent-tags-text">
+                                <a href="/search.html">版面配置</a>
+                            </li>
+                        </ul>
+                        <div class="bottom-socialIcon">
+                            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3"
+                                data-url="https://sitwant.github.io/" data-color="default" data-size="large"
+                                data-count="false">
+                                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js"
+                                    async="async" defer="defer"></script>
+
+                            </div>
+                            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button"
+                                data-size="large">
+                                <a target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by
+                    sitewant</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal 彈窗  -->
+    <div class="modal"></div>
+</body>
+
+</html>

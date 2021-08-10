@@ -1,0 +1,429 @@
+<!-- 講義內頁 -- 沒事曬曬網 Sitewant -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>網頁設計探討 ｜ 沒事曬曬網 Sitewant</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+  </style>
+
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+
+
+  <script type="text/javascript">LineIt.loadButton();</script>
+
+
+  <style>
+    .js-social-share {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-left: 0;
+      line-height: 1;
+      list-style: none;
+    }
+    .js-social-share li {
+      padding-right: 1rem;
+      height: 22px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container navbar">
+            <a class="logo" href="/index.html">
+                <img class="logo-img" src="/assets/images/logo.png" alt="">
+                <img class="logo-text" src="/assets/images/logo_text.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="bottom-line" href="/about.html">關於我們</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/blog.html">文章</a>
+                </li>
+                <li class="menu-item">
+                    <a class="bottom-line" href="/handouts.html">講義</a>
+                </li>
+                <li class="menu-item-search">
+                    <span class="menu-search-bottomLine">內容索引
+                        <i class="fas fa-search"></i> </span>
+
+                    <ul class="menu-dropdown">
+                        <li class="dropdown-list1 list1-1" id="dropdownList1-1">UI/UX
+                            <ul class="menu-dropdown2" id="dropdownList2-1">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-2" id="dropdownList1-2">最新趨勢
+                            <ul class="menu-dropdown2" id="dropdownList2-2">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計潮流</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">設計工具</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">作品觀摩</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-3" id="dropdownList1-3">心得分享
+                            <ul class="menu-dropdown2" id="dropdownList2-3">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">職場二三事</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">書籍推薦</a>
+                                </li>
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">課程心得</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-4" id="dropdownList1-4" id="dropdownList1-4">設計原理
+                            <ul class="menu-dropdown2" id="dropdownList2-4">
+                                <li class="dropdown-list2">
+                                    <a href="/search.html">版面配置</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-list1 list1-5" id="dropdownList1-5">職場二三事
+                            <ul class="menu-dropdown2" id="dropdownList2-5">
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                                <li class="dropdown-list2">職場二</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 手機 和 手機選單 -->
+            <!-- 手機 -->
+            <div class="mobile-header d-none">
+                <ul class="mobile-navbar ">
+                    <li>
+                        <i class="fas fa-search mobileIcon-search"></i>
+                    </li>
+                    <li>
+                        <a href="/index.html"> <img class="mobile-logo-img" src="/assets/images/logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bars mobileIcon-button"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 手機選單 -->
+        <div class="mobile-menu ">
+            <img class="mobile_index_menuSearch" src="/assets/images/mobile_index_menuSearch.png" alt="">
+            <i class="mobile-menu-remove fas fa-times"></i>
+            <ul class="mobile-menuList">
+                <li class="mobile-menuItem">UI/UX
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">最新趨勢
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計潮流</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">設計工具</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">作品觀摩</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">心得分享
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">職場二三事</a>
+                        </li>
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">書籍推薦</a>
+                        </li>
+                        <li class="mobile-menuItem2 last">
+                            <a href="/search.html">課程心得</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menuItem">設計原理
+                    <ul class="mobile-menuList2">
+                        <li class="mobile-menuItem2">
+                            <a href="/search.html">版面配置</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-yellow-menu ">
+            <img class="mobile_index_menuBtn" src="/assets/images/mobile_index_menuBtn.png" alt="">
+            <i class="mobile-yellow-menu-remove fas fa-times"></i>
+            <ul class="mobile-yellow-menuList">
+                <li class="mobile-yellow-menuItem">
+                    <a href="/about.html">關於我們</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/blog.html">文章</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/handouts.html">講義</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/faq.html">常見問題</a>
+                </li>
+                <li class="mobile-yellow-menuItem">
+                    <a href="/planning.html">網站企劃</a>
+                </li>
+                <li class="mobile-yellow-menuItemCont">
+                    <span>聯絡我們</span>
+                    <form action="https://mailthis.to/a0958451329@yahoo.com.tw" method="POST"
+                        class="mobile-contactForm">
+                        <div class="mobile-contactFormDiv">
+                            <h2>Hey,<br>有話想偷偷跟我們說嗎？<br>歡迎隨時聯繫我們</h2>
+                            <h6 class="mobile-contact-text-en">We don`t bombard you with emails,bed you for money or
+                                make you sing abunch of petitions politicians don`s give a shit about.</h6>
+                            <div class="mobile-section-move-input">
+
+                                <input class="mobile-contact-input-s" type="text" name="name">
+                                <div class="mobile-contact-name">姓名Name</div>
+
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <input class="mobile-contact-input-s" type="text" name="_replyto">
+                                <div class="mobile-contact-name   mobile-email">信箱E-mail</div>
+                            </div>
+
+                            <div class="mobile-section-move-input">
+                                <textarea class="mobile-contact-message" name="message" cols="200"
+                                    rows="200"></textarea>
+                                <div class="mobile-contact-talk">想說的話...</div>
+                            </div>
+                            <div class="mobile-contact-btnArea">
+                                <img class="mobile_index_contact" src="/assets/images/mobile_index_contact.png" alt="">
+                                <input class="mobile-contact-btn" type="submit" value="送出">
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="bread" id="bread">
+        <a href="/">首頁</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/handouts.html">講義列表</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="/handoutsContent_p2.html">網頁設計探討</a>
+    </nav>
+
+  <main class="handoutsContent">
+    <!-- 撥放器 -->
+    <section class="section-viewer">
+      <div class="viewer" id="viewer"></div>
+      
+      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js?version=0.1.0-beta.11"></script>
+      <script>
+        const config = { 
+          documentId: '7ae6dd2e-dbac-4bb9-afcb-f12cfbb2b889',
+          darkMode: true,
+          appBarColored: true,
+          initialMaxWidth: 800
+        };
+        CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+          
+        });
+      </script>
+    </section>
+
+      
+    <!-- 網頁內容 -->
+    <section class="section-hs">
+        <div class="hs-left">
+            <div class="line-it-button" data-lang="zh_Hant" data-type="share-b" data-ver="3" data-url="https://sitwant.github.io/" data-color="default" data-size="large" data-count="false"></div>
+            <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+            <div class="fb-share-button" data-href="https://sitwant.github.io/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsitwant.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" title="可將頁面的資訊分享至Facebook。"><i class="fab fa-facebook-square"></i></a></div>
+            <img class="hs-water" src="/assets/images/hc_water.png" alt="">
+        </div>
+
+        <div class="hs-middle">
+            <h1 class="hs-h1">網頁設計探討</h1>
+            <img class="hs-book" src="/assets/images/hc_book.png" alt="">
+            <span> :  Jani Cho</span>
+            <ul class="tags">
+                <a href="/search.html"><li class="tags-text">UI/UX</li></a>
+                <a href="/search.html"><li class="tags-text">設計原理</li></a>
+                <a href="/search.html"><li class="tags-text">版面配置</li></a>
+                <a href="/search.html"><li class="tags-text">職場二三事</li></a>
+            </ul>
+        </div>
+      
+
+        <div class="hs-right">
+            <p class="hs-right-p1">明白網頁是如何建構出來後，接著進一步探討 ”網頁設計” 是什麼，網頁設計又涵蓋了哪些核心項目呢 ? 讓我們來深入了解網頁的開發與製作的過程，以及各個職位在建立網站開發的過程中所該負責的項目。
+                <br>
+                <br>
+                嘿，在進入網頁設計領域之前，還需具備哪些良好的心態呢，準備好了嗎 ? 一起來趟網頁設計的奇幻冒險之旅吧！               
+            </p>
+            <img class="hs-orange" src="/assets/images/hc_orange.png" alt="">
+            <span class="hs-right-title">章節重點</span>
+            <ul class="hs-right-p2">
+                <li>1.網路是如何運作</li>
+                <li>2.網頁的構成 (CSS +HTML +Javascript)</li>
+                <li>3.網頁又分為靜態網頁、動態網頁</li>
+                <li>4.網頁的開發系統 ( 前端工程 + 後端工程 )</li>
+                <li>5.網站的類型 (一頁式網站、形象網站/企業網站、部落格網站、購物網站/電子商務 )</li>
+                <li>6.網頁設計相關職位與工作</li>
+            </ul>
+        </div>
+
+        <div class="hs-bottom">
+            <img class="hs-water-bottom" src="/assets/images/hc_water.png" alt="">
+            <ul class="tags-bottom">
+                <a href="/search.html"><li class="tags-text">UI/UX</li></a>
+                <a href="/search.html"><li class="tags-text">設計原理</li></a>
+                <a href="/search.html"><li class="tags-text">版面配置</li></a>
+                <a href="/search.html"><li class="tags-text">職場二三事</li></a>
+            </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+    <footer class="footer">
+        <div class="footerbar container">
+            <ul class="footerItem">
+                <li class="footer-item">
+                    <a class="bottom-line" href="/lecturers.html">師資介紹</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/faq.html">常見問題</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/planning.html">網站企劃</a>
+                </li>
+                <li class="footer-item">
+                    <a class="bottom-line" href="/contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <p><a href="/copyWriting.html" class="privacy">隱私權政策與免責聲明</a>Copyright © 2021 <span>- present. Design by
+                    sitewant</span></p>
+        </div>
+    </footer>
+
+<!-- Modal 彈窗  -->
+<div class="modal"></div>
+
+
+
+
+  
+  
+  <script>
+    var el = document.querySelector('.entry-content');
+    var notIndex = location.pathname !== '/';
+    var notCategory = location.pathname.indexOf('category') === -1;
+    var notTag = location.pathname.indexOf('tag') === -1;
+    
+    // 載入JS檔
+    function appendJS(src) {
+      var script = document.createElement("script");
+      script.src = src;
+      document.head.appendChild(script);
+    }
+  
+    if(el && notIndex && notCategory && notTag) {
+      
+      var currentUri = document.querySelector('[rel="canonical"]').href;
+      
+      var fbBtn = '<div class="fb-like" data-href="' + currentUri + '" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>';
+      var lineBtn = '<div class="line-it-button" data-lang="zh_Hant" data-type="share-a" data-ver="3" data-url="' + currentUri + '" data-color="default" data-size="small" data-count="true" style="display: none;"></div>';
+      var twitterBtn = '<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>';
+      
+      var socialHTML = '<ul class="js-social-share">' +
+        '<li>' + fbBtn + '</li>' +
+        '<li>' + lineBtn + '</li>' +
+        '<li>' + twitterBtn + '</li>' +
+      '</ul>';
+      el.insertAdjacentHTML('beforebegin', socialHTML);
+  
+      if(document.querySelector('.sharedaddy')) {
+        var originShare = document.querySelector('.sharedaddy');
+        originShare.insertAdjacentHTML('beforebegin', socialHTML);
+      }
+      
+      appendJS('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
+      appendJS('https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0');
+      appendJS('https://platform.twitter.com/widgets.js');
+      
+    }
+  </script>
+
+
+</body>
+</html>
